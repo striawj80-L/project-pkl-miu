@@ -2,19 +2,20 @@
 
 namespace Tests\Feature;
 
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
 class ContactPageTest extends TestCase
 {
-    /**
-     * A basic feature test example.
-     */
-    public function test_example(): void
+    public function test_contact_page_renders_the_reusable_navigation_and_contact_information(): void
     {
-        $response = $this->get('/');
+        $response = $this->get('/contact');
 
-        $response->assertStatus(200);
+        $response
+            ->assertOk()
+            ->assertSee('Hubungi Kami')
+            ->assertSee('Konsultasikan solusi yang Anda butuhkan')
+            ->assertSee('ptmitrainovasinggul@yahoo.com')
+            ->assertSee('contact-hero', false)
+            ->assertSee('aria-current="page"', false);
     }
 }
