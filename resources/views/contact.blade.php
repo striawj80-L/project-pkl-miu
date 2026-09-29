@@ -27,25 +27,46 @@
                         </p>
                     </div>
 
-                    <form class="contact-form" action="mailto:ptmitrainovasinggul@yahoo.com" method="post" enctype="text/plain">
+                    <form class="contact-form" action="{{ route('contact.send') }}" method="post">
+                        @csrf
                         <h2>Hubungi Kami</h2>
                         <p class="contact-form__description">
                             Konsultasikan kebutuhan digitalisasi proses bisnis Anda bersama tim kami.
                         </p>
 
+                        @if (session('contact_success'))
+                            <p class="contact-form__success" role="status">{{ session('contact_success') }}</p>
+                        @endif
+
+                        @if ($errors->any())
+                            <p class="contact-form__error-summary" role="alert">Periksa kembali data yang Anda isi.</p>
+                        @endif
+
                         <label for="name">Nama</label>
-                        <input id="name" name="Nama" type="text" autocomplete="name" placeholder="Nama lengkap" required>
+                        <input id="name" name="name" type="text" autocomplete="name" value="{{ old('name') }}" placeholder="Nama lengkap" maxlength="120" required @if ($errors->has('name')) aria-invalid="true" aria-describedby="name-error" @endif>
+                        @error('name')
+                            <span class="contact-form__field-error" id="name-error">{{ $message }}</span>
+                        @enderror
 
                         <label for="email">Email</label>
-                        <input id="email" name="Email" type="email" autocomplete="email" placeholder="nama@perusahaan.com" required>
+                        <input id="email" name="email" type="email" autocomplete="email" value="{{ old('email') }}" placeholder="nama@perusahaan.com" maxlength="255" required @if ($errors->has('email')) aria-invalid="true" aria-describedby="email-error" @endif>
+                        @error('email')
+                            <span class="contact-form__field-error" id="email-error">{{ $message }}</span>
+                        @enderror
 
                         <label for="company">Perusahaan</label>
-                        <input id="company" name="Perusahaan" type="text" autocomplete="organization" placeholder="Nama perusahaan">
+                        <input id="company" name="company" type="text" autocomplete="organization" value="{{ old('company') }}" placeholder="Nama perusahaan" maxlength="255" @if ($errors->has('company')) aria-invalid="true" aria-describedby="company-error" @endif>
+                        @error('company')
+                            <span class="contact-form__field-error" id="company-error">{{ $message }}</span>
+                        @enderror
 
                         <label for="message">Deskripsi</label>
-                        <textarea id="message" name="Pesan" rows="4" placeholder="Ceritakan kebutuhan Anda..." required></textarea>
+                        <textarea id="message" name="message" rows="4" maxlength="5000" placeholder="Ceritakan kebutuhan Anda..." required @if ($errors->has('message')) aria-invalid="true" aria-describedby="message-error" @endif>{{ old('message') }}</textarea>
+                        @error('message')
+                            <span class="contact-form__field-error" id="message-error">{{ $message }}</span>
+                        @enderror
 
-                        <p class="contact-form__note">Pesan akan dikirim melalui aplikasi email Anda.</p>
+                        <p class="contact-form__note">Pesan Anda akan dikirim langsung ke tim kami.</p>
                         <button type="submit">Kirim Pesan <span aria-hidden="true">→</span></button>
                     </form>
                 </section>
