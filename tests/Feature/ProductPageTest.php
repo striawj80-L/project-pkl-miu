@@ -1,0 +1,22 @@
+<?php
+
+namespace Tests\Feature;
+
+use Tests\TestCase;
+
+class ProductPageTest extends TestCase
+{
+    public function test_product_and_testimonial_page_renders_assets_and_contact_links(): void
+    {
+        $response = $this->get(route('home'));
+
+        $response
+            ->assertOk()
+            ->assertSee('Pilihan Solusi Sesuai Kebutuhan Pabrik')
+            ->assertSee('Dukungan Nyata dari Para Pemimpin Industri')
+            ->assertSee(asset('images/foto-mr-ck.png'), false)
+            ->assertSee(asset('images/foto-snoop-dog.png'), false)
+            ->assertSee(asset('images/foto-napoleon.png'), false)
+            ->assertSee(route('contact'), false);
+    }
+}

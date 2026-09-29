@@ -179,7 +179,7 @@
                     <div class="mt-7 flex flex-col gap-5 sm:mt-8">
                         <article class="rounded-2xl border border-[#c6d8e4] bg-[#eff9ff] p-5 shadow-sm transition-all duration-300 ease-in-out hover:border-[#8dbbda] hover:shadow-lg sm:p-7">
                             <div class="flex flex-wrap items-center gap-4">
-                                <img class="h-10 w-10 rounded-full object-cover" src="images/foto-mr-ck.png" alt="Foto Mr. CK" width="40" height="40" loading="lazy">
+                                <img class="h-10 w-10 rounded-full object-cover" src="{{ asset('images/foto-mr-ck.png') }}" alt="Foto Mr. CK" width="40" height="40" loading="lazy">
                                 <div class="flex gap-1 text-2xl leading-none text-[#e6e900]" role="img" aria-label="5 dari 5 bintang">
                                     <span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span>
                                 </div>
@@ -193,7 +193,7 @@
 
                         <article class="rounded-2xl border border-[#c6d8e4] bg-[#eff9ff] p-5 shadow-sm transition-all duration-300 ease-in-out hover:border-[#8dbbda] hover:shadow-lg sm:p-7">
                             <div class="flex flex-wrap items-center gap-4">
-                                <img class="h-10 w-10 rounded-full object-cover" src="images/foto-snoop-dog.png" alt="Foto Snoop Dog" width="40" height="40" loading="lazy">
+                                <img class="h-10 w-10 rounded-full object-cover" src="{{ asset('images/foto-snoop-dog.png') }}" alt="Foto Snoop Dog" width="40" height="40" loading="lazy">
                                 <div class="flex gap-1 text-2xl leading-none text-[#e6e900]" role="img" aria-label="5 dari 5 bintang">
                                     <span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span>
                                 </div>
@@ -207,7 +207,7 @@
 
                         <article class="rounded-2xl border border-[#c6d8e4] bg-[#eff9ff] p-5 shadow-sm transition-all duration-300 ease-in-out hover:border-[#8dbbda] hover:shadow-lg sm:p-7">
                             <div class="flex flex-wrap items-center gap-4">
-                                <img class="h-10 w-10 rounded-full object-cover" src="images/foto-napoleon.png" alt="Foto Napoleon" width="40" height="40" loading="lazy">
+                                <img class="h-10 w-10 rounded-full object-cover" src="{{ asset('images/foto-napoleon.png') }}" alt="Foto Napoleon" width="40" height="40" loading="lazy">
                                 <div class="flex gap-1 text-2xl leading-none text-[#e6e900]" role="img" aria-label="5 dari 5 bintang">
                                     <span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span><span aria-hidden="true">★</span>
                                 </div>
