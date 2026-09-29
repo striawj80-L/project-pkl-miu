@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const btn = document.getElementById('btnAlert');
     const menuButton = document.querySelector('[data-menu-toggle]');
-    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenu = document.getElementById('primary-navigation');
 
     if (btn) {
         btn.addEventListener('click', () => {
@@ -11,14 +11,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (menuButton instanceof HTMLButtonElement && mobileMenu) {
         const closeMenu = () => {
-            mobileMenu.classList.add('hidden');
+            mobileMenu.classList.remove('is-open');
             menuButton.setAttribute('aria-expanded', 'false');
         };
 
         menuButton.addEventListener('click', () => {
             const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
 
-            mobileMenu.classList.toggle('hidden', isExpanded);
+            mobileMenu.classList.toggle('is-open', !isExpanded);
             menuButton.setAttribute('aria-expanded', String(!isExpanded));
         });
 

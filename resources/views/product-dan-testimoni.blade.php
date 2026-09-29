@@ -11,32 +11,7 @@
     </head>
     <body class="m-0 font-sans text-slate-700 antialiased">
         <header id="home" class="bg-[#a9c1ff]">
-            <nav class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-5 py-3 sm:px-8" aria-label="Navigasi utama">
-                <a class="flex items-center gap-3 text-sm font-bold text-white sm:text-base" href="{{ route('home') }}" aria-label="Mitra Inovasi Unggul - Home">
-                    <img src="{{ asset('images/Logo MIU.webp') }}" alt="" width="40" height="40" class="h-10 w-10 rounded-full object-contain">
-                    <span>Mitra Inovasi Unggul</span>
-                </a>
-
-                <button
-                    class="inline-flex h-10 w-10 items-center justify-center rounded-lg text-[#103e7d] transition-all duration-300 ease-in-out hover:bg-white/30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#103e7d] md:hidden"
-                    type="button"
-                    aria-label="Buka navigasi"
-                    aria-controls="mobile-menu"
-                    aria-expanded="false"
-                    data-menu-toggle
-                >
-                    <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                        <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                    </svg>
-                </button>
-
-                <div id="mobile-menu" class="hidden w-full flex-col items-stretch gap-1 md:flex md:w-auto md:flex-row md:items-center md:gap-2">
-                    <a class="rounded-full px-4 py-2 text-sm font-semibold text-white/90 transition-all duration-300 ease-in-out hover:bg-white/25 hover:text-[#103e7d] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#103e7d] md:px-3" href="#ecosystem">About Us</a>
-                    <a class="rounded-full px-4 py-2 text-sm font-semibold text-white/90 transition-all duration-300 ease-in-out hover:bg-white/25 hover:text-[#103e7d] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#103e7d] md:px-3" href="#home">Home</a>
-                    <a class="rounded-full px-4 py-2 text-sm font-semibold text-white/90 transition-all duration-300 ease-in-out hover:bg-white/25 hover:text-[#103e7d] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#103e7d] md:px-3" href="#product">Product</a>
-                    <a class="rounded-full px-4 py-2 text-sm font-semibold text-white/90 transition-all duration-300 ease-in-out hover:bg-white/25 hover:text-[#103e7d] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#103e7d] md:px-3" href="{{ route('contact') }}">Contact</a>
-                </div>
-            </nav>
+            <x-navbar active="product" />
         </header>
 
         <main>

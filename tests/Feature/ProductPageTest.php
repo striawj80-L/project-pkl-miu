@@ -14,6 +14,8 @@ class ProductPageTest extends TestCase
             ->assertOk()
             ->assertSee('Pilihan Solusi Sesuai Kebutuhan Pabrik')
             ->assertSee('Dukungan Nyata dari Para Pemimpin Industri')
+            ->assertSee('site-nav__links', false)
+            ->assertSee('aria-current="page"', false)
             ->assertSee(asset('images/foto-mr-ck.png'), false)
             ->assertSee(asset('images/foto-snoop-dog.png'), false)
             ->assertSee(asset('images/foto-napoleon.png'), false)
