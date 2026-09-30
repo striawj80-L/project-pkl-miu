@@ -21,8 +21,8 @@
                         Pilihan Solusi Sesuai Kebutuhan Pabrik &amp; Kawasan Berikat.
                     </h1>
 
-                    <div class="grid grid-cols-1 gap-5 sm:grid-cols-3 lg:gap-8">
-                        <article class="flex h-full flex-col rounded-xl border border-[#d2e0eb] bg-[#f5faff] p-5 shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-2 hover:border-[#a9cdec] hover:shadow-2xl sm:p-6">
+                    <div class="product-card-grid grid grid-cols-1 gap-5 sm:grid-cols-3 lg:gap-8" data-product-card-grid>
+                        <article class="product-card flex h-full flex-col rounded-xl border border-[#d2e0eb] bg-[#f5faff] p-5 shadow-sm transition-all duration-300 ease-in-out sm:p-6" data-product-card="inventory">
                             <div class="flex min-h-14 items-start justify-between gap-4">
                                 <h2 class="text-lg font-bold leading-tight text-[#4f7f9d]">IT Inventory (ERP)</h2>
                                 <svg class="h-9 w-9 shrink-0 text-[#4f7f9d]" viewBox="0 0 40 40" fill="none" aria-hidden="true">
@@ -49,12 +49,12 @@
                                     </li>
                                 </ul>
                             </div>
-                            <a href="{{ route('contact') }}" class="mt-6 inline-flex min-h-11 w-full items-center justify-center rounded-lg bg-[#dceefa] px-4 py-2 text-sm font-semibold text-[#3d7599] transition-all duration-300 ease-in-out hover:bg-[#b8ddf4] hover:text-[#174d79] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#3984bf]">
+                            <button type="button" class="product-card__button mt-6 inline-flex min-h-11 w-full items-center justify-center rounded-lg bg-[#dceefa] px-4 py-2 text-sm font-semibold text-[#3d7599] transition-all duration-300 ease-in-out hover:bg-[#b8ddf4] hover:text-[#174d79] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#3984bf]" aria-controls="product-details-inventory" aria-pressed="false" data-product-select="inventory">
                                 Selengkapnya
-                            </a>
+                            </button>
                         </article>
 
-                        <article class="flex h-full flex-col rounded-xl border border-[#d2e0eb] bg-[#f5faff] p-5 shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-2 hover:border-[#a9cdec] hover:shadow-2xl sm:p-6">
+                        <article class="product-card flex h-full flex-col rounded-xl border border-[#d2e0eb] bg-[#f5faff] p-5 shadow-sm transition-all duration-300 ease-in-out sm:p-6" data-product-card="cn-app">
                             <div class="flex min-h-14 items-start justify-between gap-4">
                                 <h2 class="text-lg font-bold leading-tight text-[#4f7f9d]">CN APP</h2>
                                 <svg class="h-9 w-9 shrink-0 text-[#4f7f9d]" viewBox="0 0 40 40" fill="none" aria-hidden="true">
@@ -81,12 +81,12 @@
                                     </li>
                                 </ul>
                             </div>
-                            <a href="{{ route('contact') }}" class="mt-6 inline-flex min-h-11 w-full items-center justify-center rounded-lg bg-[#dceefa] px-4 py-2 text-sm font-semibold text-[#3d7599] transition-all duration-300 ease-in-out hover:bg-[#b8ddf4] hover:text-[#174d79] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#3984bf]">
+                            <button type="button" class="product-card__button mt-6 inline-flex min-h-11 w-full items-center justify-center rounded-lg bg-[#dceefa] px-4 py-2 text-sm font-semibold text-[#3d7599] transition-all duration-300 ease-in-out hover:bg-[#b8ddf4] hover:text-[#174d79] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#3984bf]" aria-controls="product-details-cn-app" aria-pressed="false" data-product-select="cn-app">
                                 Selengkapnya
-                            </a>
+                            </button>
                         </article>
 
-                        <article class="flex h-full flex-col rounded-xl border border-[#d2e0eb] bg-[#f5faff] p-5 shadow-sm transition-all duration-300 ease-in-out hover:-translate-y-2 hover:border-[#a9cdec] hover:shadow-2xl sm:p-6">
+                        <article class="product-card flex h-full flex-col rounded-xl border border-[#d2e0eb] bg-[#f5faff] p-5 shadow-sm transition-all duration-300 ease-in-out sm:p-6" data-product-card="internal-app">
                             <div class="flex min-h-14 items-start justify-between gap-4">
                                 <h2 class="text-lg font-bold leading-tight text-[#4f7f9d]">Basic Internal App</h2>
                                 <svg class="h-9 w-9 shrink-0 text-[#4f7f9d]" viewBox="0 0 40 40" fill="none" aria-hidden="true">
@@ -113,10 +113,72 @@
                                     </li>
                                 </ul>
                             </div>
-                            <a href="{{ route('contact') }}" class="mt-6 inline-flex min-h-11 w-full items-center justify-center rounded-lg bg-[#dceefa] px-4 py-2 text-sm font-semibold text-[#3d7599] transition-all duration-300 ease-in-out hover:bg-[#b8ddf4] hover:text-[#174d79] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#3984bf]">
+                            <button type="button" class="product-card__button mt-6 inline-flex min-h-11 w-full items-center justify-center rounded-lg bg-[#dceefa] px-4 py-2 text-sm font-semibold text-[#3d7599] transition-all duration-300 ease-in-out hover:bg-[#b8ddf4] hover:text-[#174d79] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#3984bf]" aria-controls="product-details-internal-app" aria-pressed="false" data-product-select="internal-app">
                                 Selengkapnya
-                            </a>
+                            </button>
                         </article>
+                    </div>
+
+                    <div class="product-details" aria-live="polite" aria-atomic="true">
+                        <section class="product-details__panel" id="product-details-inventory" aria-labelledby="product-details-inventory-title" data-product-details="inventory">
+                            <div class="product-details__intro">
+                                <h2 id="product-details-inventory-title">IT Inventory (ERP) <span>(KB, GB, KEK, KITE, PLB)</span></h2>
+                                <p>
+                                    Satu dashboard untuk mengelola data perusahaan pengguna fasilitas. IT Inventory App dari MIU memetakan seluruh siklus aset: dari pengadaan, penempatan, peminjaman, hingga disposisi. Mendukung multi-location, barcode/QR, dan integrasi ke ERP/HR. Real-time, akurat, siap audit.
+                                </p>
+                            </div>
+                            <div class="product-details__features">
+                                <article>
+                                    <h3>Asset Lifecycle Automation</h3>
+                                    <p>Otomatisasi Create–Assign–Return–Dispose dengan jejak lengkap. Setiap penambahan dan pengurangan aset tercatat rapi serta mudah ditelusuri.</p>
+                                </article>
+                                <article>
+                                    <h3>Real-Time Stock &amp; Distribution</h3>
+                                    <p>Pantau pergerakan stok secara real-time, termasuk dukungan barcode/QR agar inventaris lebih cepat dan akurat.</p>
+                                </article>
+                            </div>
+                            <a class="product-details__contact" href="{{ route('contact') }}">Konsultasikan kebutuhan Anda <span aria-hidden="true">→</span></a>
+                        </section>
+
+                        <section class="product-details__panel" id="product-details-cn-app" aria-labelledby="product-details-cn-app-title" data-product-details="cn-app" hidden>
+                            <div class="product-details__intro">
+                                <h2 id="product-details-cn-app-title">Digitalisasi Resi &amp; Dokumen Pengiriman dengan CN App <span>(CEISA 4.0 Ready)</span></h2>
+                                <p>
+                                    Satu platform untuk pencatatan, validasi, dan pelacakan e-Consignment Note lebih cepat, akurat, dan terstandardisasi lintas divisi. CN App membantu tim operasional, warehouse, dan compliance bekerja di jalur yang sama.
+                                </p>
+                            </div>
+                            <div class="product-details__features">
+                                <article>
+                                    <h3>Dokumen Pengiriman Digital</h3>
+                                    <p>Buat dan kelola e-Consignment Note dalam satu alur digital agar pencatatan serta pencarian dokumen lebih praktis.</p>
+                                </article>
+                                <article>
+                                    <h3>Validasi &amp; Integrasi</h3>
+                                    <p>Dukung validasi proses dan integrasi CEISA 4.0 serta ERP/WMS agar aliran data operasional tetap konsisten.</p>
+                                </article>
+                            </div>
+                            <a class="product-details__contact" href="{{ route('contact') }}">Konsultasikan kebutuhan Anda <span aria-hidden="true">→</span></a>
+                        </section>
+
+                        <section class="product-details__panel" id="product-details-internal-app" aria-labelledby="product-details-internal-app-title" data-product-details="internal-app" hidden>
+                            <div class="product-details__intro">
+                                <h2 id="product-details-internal-app-title">Optimalkan Operasional Internal dengan Aplikasi yang Terintegrasi dan Efisien</h2>
+                                <p>
+                                    Aplikasi internal yang dirancang mengikuti kebutuhan perusahaan untuk membantu koordinasi antar divisi, mempercepat persetujuan, dan meningkatkan transparansi kerja.
+                                </p>
+                            </div>
+                            <div class="product-details__features">
+                                <article>
+                                    <h3>Alur Kerja yang Lebih Efisien</h3>
+                                    <p>Digitalisasi proses rutin agar tim dapat mengelola pekerjaan dengan alur yang lebih jelas dan konsisten.</p>
+                                </article>
+                                <article>
+                                    <h3>Kolaborasi Antar Divisi</h3>
+                                    <p>Satukan informasi dan koordinasi dalam aplikasi yang menyesuaikan kebutuhan operasional perusahaan.</p>
+                                </article>
+                            </div>
+                            <a class="product-details__contact" href="{{ route('contact') }}">Konsultasikan kebutuhan Anda <span aria-hidden="true">→</span></a>
+                        </section>
                     </div>
                 </div>
             </section>
