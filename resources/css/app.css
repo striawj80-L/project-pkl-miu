@@ -17,6 +17,105 @@ body {
     margin: 0;
 }
 
+.product-card-grid {
+    align-items: center;
+    overflow: visible;
+}
+
+.product-card {
+    opacity: 0.78;
+    transform: scale(0.94);
+}
+
+.product-card.is-selected {
+    z-index: 1;
+    border-color: #5c9ed0;
+    background: #a9ddf8;
+    box-shadow: 0 20px 40px rgba(16, 62, 125, 0.16);
+    opacity: 1;
+    transform: scale(1.06);
+}
+
+.product-card__button[aria-pressed="true"] {
+    background: #39a9ed;
+    color: #fff;
+}
+
+.product-details {
+    margin-top: 64px;
+}
+
+.product-details__panel[hidden] {
+    display: none;
+}
+
+.product-details__intro {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+    gap: clamp(24px, 5vw, 64px);
+}
+
+.product-details__intro h2 {
+    margin: 0;
+    color: #174d70;
+    font-size: clamp(1.45rem, 3vw, 2rem);
+    font-weight: 700;
+    line-height: 1.22;
+}
+
+.product-details__intro h2 span {
+    display: block;
+}
+
+.product-details__intro p {
+    margin: 0;
+    color: #263746;
+    font-size: 1rem;
+    line-height: 1.55;
+}
+
+.product-details__features {
+    display: grid;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.product-details__features article {
+    padding: 18px 22px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #a5bbff, #3f70f5);
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(63, 112, 245, 0.14);
+}
+
+.product-details__features h3 {
+    margin: 0 0 5px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.product-details__features p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.product-details__contact {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 22px;
+    color: #174d79;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.product-details__contact:hover {
+    color: #0871c4;
+}
+
 .contact-page {
     min-height: 100vh;
     overflow: hidden;
@@ -449,6 +548,38 @@ body {
 }
 
 @media (max-width: 760px) {
+    .product-card {
+        opacity: 0.84;
+        transform: none;
+    }
+
+    .product-card.is-selected {
+        transform: none;
+    }
+
+    .product-details {
+        margin-top: 44px;
+    }
+
+    .product-details__intro {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .product-details__features {
+        gap: 12px;
+        margin-top: 24px;
+    }
+
+    .product-details__features article {
+        padding: 16px 18px;
+        border-radius: 16px;
+    }
+
+    .product-details__features h3 {
+        font-size: 1.08rem;
+    }
+
     .contact-hero {
         min-height: 270px;
         padding-top: 112px;
