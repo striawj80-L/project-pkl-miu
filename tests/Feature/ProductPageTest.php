@@ -23,6 +23,8 @@ class ProductPageTest extends TestCase
             ->assertSee('product-details-inventory-title', false)
             ->assertSee('product-details-cn-app-title', false)
             ->assertSee('product-details-internal-app-title', false)
+            ->assertSee('Centralized Data Management')
+            ->assertSee('Smart Workflow Automation')
             ->assertSee(asset('images/ant-design_truck-outlined.png'), false)
             ->assertSee(asset('images/fa-solid_warehouse.png'), false)
             ->assertSee(asset('images/fluent-emoji-high-contrast_label.png'), false)

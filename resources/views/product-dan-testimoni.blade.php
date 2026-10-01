@@ -162,19 +162,15 @@
 
                         <section class="product-details__panel" id="product-details-internal-app" aria-labelledby="product-details-internal-app-title" data-product-details="internal-app" hidden>
                             <div class="product-details__intro">
-                                <h2 id="product-details-internal-app-title">Optimalkan Operasional Internal dengan Aplikasi yang Terintegrasi dan Efisien</h2>
+                                <h2 id="product-details-internal-app-title">Centralized Data Management</h2>
                                 <p>
-                                    Aplikasi internal yang dirancang mengikuti kebutuhan perusahaan untuk membantu koordinasi antar divisi, mempercepat persetujuan, dan meningkatkan transparansi kerja.
+                                    Seluruh data — mulai dari absensi, gudang, hingga laporan — tersimpan aman di satu dashboard terpusat. Akses cepat, data konsisten, dan keputusan bisa diambil lebih cepat dengan analitik real-time.
                                 </p>
                             </div>
                             <div class="product-details__features">
                                 <article>
-                                    <h3>Alur Kerja yang Lebih Efisien</h3>
-                                    <p>Digitalisasi proses rutin agar tim dapat mengelola pekerjaan dengan alur yang lebih jelas dan konsisten.</p>
-                                </article>
-                                <article>
-                                    <h3>Kolaborasi Antar Divisi</h3>
-                                    <p>Satukan informasi dan koordinasi dalam aplikasi yang menyesuaikan kebutuhan operasional perusahaan.</p>
+                                    <h3>Smart Workflow Automation</h3>
+                                    <p>Hilangkan proses manual dan spreadsheet yang membingungkan. Sistem kami mengotomatisasi approval, notifikasi, serta pelaporan, sehingga tim Anda bisa fokus pada hal yang lebih strategis.</p>
                                 </article>
                             </div>
                             <a class="product-details__contact" href="{{ route('contact') }}">Konsultasikan kebutuhan Anda <span aria-hidden="true">→</span></a>

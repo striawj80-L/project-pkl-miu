@@ -186,9 +186,13 @@ body {
     justify-content: flex-end;
     overflow: hidden;
     padding: 112px clamp(24px, 8vw, 120px) 64px;
-    background:
+    background-image:
         linear-gradient(90deg, rgba(5, 21, 70, 0.16), rgba(5, 21, 70, 0.46)),
-        url('/images/AboutUsBG.png') center / cover no-repeat;
+        url('/images/bg.jpg');
+    background-attachment: fixed, fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #fff;
 }
 
