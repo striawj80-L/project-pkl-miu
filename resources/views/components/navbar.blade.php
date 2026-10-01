@@ -20,7 +20,7 @@
     </button>
 
     <div class="site-nav__links" id="primary-navigation">
-        <a href="{{ route('home') }}#ecosystem" @class(['is-active' => $active === 'about']) @if ($active === 'about') aria-current="page" @endif>
+        <a href="{{ route('about') }}" @class(['is-active' => $active === 'about']) @if ($active === 'about') aria-current="page" @endif>
             About Us
         </a>
         <a href="{{ route('home') }}" @class(['is-active' => $active === 'home']) @if ($active === 'home') aria-current="page" @endif>

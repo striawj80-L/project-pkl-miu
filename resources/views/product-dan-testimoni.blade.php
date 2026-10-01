@@ -36,15 +36,15 @@
                                 <h3 class="text-xs font-bold text-slate-800">Suitable for:</h3>
                                 <ul class="mt-2 flex flex-col gap-1.5 text-sm text-slate-700">
                                     <li class="flex items-center gap-2">
-                                        <svg class="h-4 w-4 shrink-0 text-[#3784b9]" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m4 10 4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        <img class="h-4 w-4 shrink-0 object-contain" src="{{ asset('images/fa-solid_warehouse.png') }}" alt="" aria-hidden="true" width="16" height="16" loading="lazy">
                                         Penerima fasilitas
                                     </li>
                                     <li class="flex items-center gap-2">
-                                        <svg class="h-4 w-4 shrink-0 text-[#3784b9]" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m4 10 4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        <img class="h-4 w-4 shrink-0 object-contain" src="{{ asset('images/ant-design_truck-outlined.png') }}" alt="" aria-hidden="true" width="16" height="16" loading="lazy">
                                         Mengejar efisiensi
                                     </li>
                                     <li class="flex items-center gap-2">
-                                        <svg class="h-4 w-4 shrink-0 text-[#3784b9]" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m4 10 4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        <img class="h-4 w-4 shrink-0 object-contain" src="{{ asset('images/fluent-emoji-high-contrast_label.png') }}" alt="" aria-hidden="true" width="16" height="16" loading="lazy">
                                         Brands
                                     </li>
                                 </ul>
@@ -68,15 +68,15 @@
                                 <h3 class="text-xs font-bold text-slate-800">Suitable for:</h3>
                                 <ul class="mt-2 flex flex-col gap-1.5 text-sm text-slate-700">
                                     <li class="flex items-center gap-2">
-                                        <svg class="h-4 w-4 shrink-0 text-[#3784b9]" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m4 10 4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        <img class="h-4 w-4 shrink-0 object-contain" src="{{ asset('images/fa-solid_warehouse.png') }}" alt="" aria-hidden="true" width="16" height="16" loading="lazy">
                                         Penerima fasilitas
                                     </li>
                                     <li class="flex items-center gap-2">
-                                        <svg class="h-4 w-4 shrink-0 text-[#3784b9]" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m4 10 4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        <img class="h-4 w-4 shrink-0 object-contain" src="{{ asset('images/ant-design_truck-outlined.png') }}" alt="" aria-hidden="true" width="16" height="16" loading="lazy">
                                         Mengejar efisiensi
                                     </li>
                                     <li class="flex items-center gap-2">
-                                        <svg class="h-4 w-4 shrink-0 text-[#3784b9]" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m4 10 4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        <img class="h-4 w-4 shrink-0 object-contain" src="{{ asset('images/fluent-emoji-high-contrast_label.png') }}" alt="" aria-hidden="true" width="16" height="16" loading="lazy">
                                         Brands
                                     </li>
                                 </ul>
@@ -100,15 +100,15 @@
                                 <h3 class="text-xs font-bold text-slate-800">Suitable for:</h3>
                                 <ul class="mt-2 flex flex-col gap-1.5 text-sm text-slate-700">
                                     <li class="flex items-center gap-2">
-                                        <svg class="h-4 w-4 shrink-0 text-[#3784b9]" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m4 10 4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        <img class="h-4 w-4 shrink-0 object-contain" src="{{ asset('images/fa-solid_warehouse.png') }}" alt="" aria-hidden="true" width="16" height="16" loading="lazy">
                                         Penerima fasilitas
                                     </li>
                                     <li class="flex items-center gap-2">
-                                        <svg class="h-4 w-4 shrink-0 text-[#3784b9]" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m4 10 4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        <img class="h-4 w-4 shrink-0 object-contain" src="{{ asset('images/ant-design_truck-outlined.png') }}" alt="" aria-hidden="true" width="16" height="16" loading="lazy">
                                         Mengejar efisiensi
                                     </li>
                                     <li class="flex items-center gap-2">
-                                        <svg class="h-4 w-4 shrink-0 text-[#3784b9]" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m4 10 4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        <img class="h-4 w-4 shrink-0 object-contain" src="{{ asset('images/fluent-emoji-high-contrast_label.png') }}" alt="" aria-hidden="true" width="16" height="16" loading="lazy">
                                         Brands
                                     </li>
                                 </ul>

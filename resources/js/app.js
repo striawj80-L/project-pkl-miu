@@ -92,4 +92,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
         selectProduct(productCards[0]?.dataset.productCard);
     }
+
+    const revealElements = document.querySelectorAll('[data-reveal]');
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (revealElements.length > 0 && 'IntersectionObserver' in window && !prefersReducedMotion) {
+        document.documentElement.classList.add('has-scroll-reveal');
+
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.12,
+            rootMargin: '0px 0px -48px 0px',
+        });
+
+        revealElements.forEach((element) => {
+            element.classList.add('will-reveal');
+            revealObserver.observe(element);
+        });
+    }
 });

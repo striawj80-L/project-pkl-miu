@@ -22,9 +22,13 @@ class ProductPageTest extends TestCase
             ->assertSee('product-details-inventory-title', false)
             ->assertSee('product-details-cn-app-title', false)
             ->assertSee('product-details-internal-app-title', false)
+            ->assertSee(asset('images/ant-design_truck-outlined.png'), false)
+            ->assertSee(asset('images/fa-solid_warehouse.png'), false)
+            ->assertSee(asset('images/fluent-emoji-high-contrast_label.png'), false)
             ->assertSee(asset('images/foto-mr-ck.png'), false)
             ->assertSee(asset('images/foto-snoop-dog.png'), false)
             ->assertSee(asset('images/foto-napoleon.png'), false)
+            ->assertSee(route('about'), false)
             ->assertSee(route('contact'), false);
     }
 }
