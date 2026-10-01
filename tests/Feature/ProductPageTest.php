@@ -19,6 +19,7 @@ class ProductPageTest extends TestCase
             ->assertSee('data-product-select="inventory"', false)
             ->assertSee('data-product-select="cn-app"', false)
             ->assertSee('data-product-select="internal-app"', false)
+            ->assertSee('data-reveal="up"', false)
             ->assertSee('product-details-inventory-title', false)
             ->assertSee('product-details-cn-app-title', false)
             ->assertSee('product-details-internal-app-title', false)

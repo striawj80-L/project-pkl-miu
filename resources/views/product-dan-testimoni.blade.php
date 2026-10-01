@@ -17,12 +17,12 @@
         <main>
             <section id="product" class="bg-gradient-to-b from-[#eaf2ff] via-[#f7faff] to-white px-5 py-14 sm:px-8 sm:py-16 lg:py-20" aria-labelledby="product-title">
                 <div class="mx-auto max-w-6xl">
-                    <h1 id="product-title" class="mx-auto mb-9 max-w-2xl text-center text-2xl font-bold leading-tight tracking-tight text-[#103e7d] sm:mb-11 sm:text-3xl">
+                    <h1 id="product-title" class="mx-auto mb-9 max-w-2xl text-center text-2xl font-bold leading-tight tracking-tight text-[#103e7d] sm:mb-11 sm:text-3xl" data-reveal="up">
                         Pilihan Solusi Sesuai Kebutuhan Pabrik &amp; Kawasan Berikat.
                     </h1>
 
                     <div class="product-card-grid grid grid-cols-1 gap-5 sm:grid-cols-3 lg:gap-8" data-product-card-grid>
-                        <article class="product-card flex h-full flex-col rounded-xl border border-[#d2e0eb] bg-[#f5faff] p-5 shadow-sm transition-all duration-300 ease-in-out sm:p-6" data-product-card="inventory">
+                        <article class="product-card flex h-full flex-col rounded-xl border border-[#d2e0eb] bg-[#f5faff] p-5 shadow-sm transition-all duration-300 ease-in-out sm:p-6" data-product-card="inventory" data-reveal="up">
                             <div class="flex min-h-14 items-start justify-between gap-4">
                                 <h2 class="text-lg font-bold leading-tight text-[#4f7f9d]">IT Inventory (ERP)</h2>
                                 <svg class="h-9 w-9 shrink-0 text-[#4f7f9d]" viewBox="0 0 40 40" fill="none" aria-hidden="true">
@@ -54,7 +54,7 @@
                             </button>
                         </article>
 
-                        <article class="product-card flex h-full flex-col rounded-xl border border-[#d2e0eb] bg-[#f5faff] p-5 shadow-sm transition-all duration-300 ease-in-out sm:p-6" data-product-card="cn-app">
+                        <article class="product-card flex h-full flex-col rounded-xl border border-[#d2e0eb] bg-[#f5faff] p-5 shadow-sm transition-all duration-300 ease-in-out sm:p-6" data-product-card="cn-app" data-reveal="up">
                             <div class="flex min-h-14 items-start justify-between gap-4">
                                 <h2 class="text-lg font-bold leading-tight text-[#4f7f9d]">CN APP</h2>
                                 <svg class="h-9 w-9 shrink-0 text-[#4f7f9d]" viewBox="0 0 40 40" fill="none" aria-hidden="true">
@@ -86,7 +86,7 @@
                             </button>
                         </article>
 
-                        <article class="product-card flex h-full flex-col rounded-xl border border-[#d2e0eb] bg-[#f5faff] p-5 shadow-sm transition-all duration-300 ease-in-out sm:p-6" data-product-card="internal-app">
+                        <article class="product-card flex h-full flex-col rounded-xl border border-[#d2e0eb] bg-[#f5faff] p-5 shadow-sm transition-all duration-300 ease-in-out sm:p-6" data-product-card="internal-app" data-reveal="up">
                             <div class="flex min-h-14 items-start justify-between gap-4">
                                 <h2 class="text-lg font-bold leading-tight text-[#4f7f9d]">Basic Internal App</h2>
                                 <svg class="h-9 w-9 shrink-0 text-[#4f7f9d]" viewBox="0 0 40 40" fill="none" aria-hidden="true">
@@ -186,35 +186,35 @@
             <section id="ecosystem" class="bg-[#f4f4f5] px-5 py-12 sm:px-8 sm:py-16" aria-labelledby="ecosystem-title">
                 <div class="mx-auto max-w-6xl">
                     <div class="grid gap-5 md:grid-cols-[1fr_0.72fr] md:items-end md:justify-between">
-                        <div>
+                        <div data-reveal="left">
                             <p class="mb-2 text-sm font-bold text-[#0871c4]">Ekosistem MIU</p>
                             <h2 id="ecosystem-title" class="text-2xl font-bold tracking-tight text-[#103e7d] sm:text-3xl">
                                 Dipercaya oleh Bisnis Terbaik
                             </h2>
                         </div>
-                        <p class="max-w-lg text-sm leading-relaxed text-slate-600 md:justify-self-end">
+                        <p class="max-w-lg text-sm leading-relaxed text-slate-600 md:justify-self-end" data-reveal="right">
                             Diimplementasikan pada lini manufaktur berikat terdepan, logistik multinasional, dan konglomerasi industri Indonesia.
                         </p>
                     </div>
 
                     <ul class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3 lg:grid-cols-4" aria-label="Mitra dan klien">
-                        <li><span class="flex min-h-12 items-center justify-center rounded-full border border-[#a9c9df] bg-[#d2edff] px-5 text-center text-sm font-medium text-slate-800 shadow-sm transition-all duration-300 ease-in-out hover:scale-105 hover:bg-[#bee5ff] hover:shadow-md">PT. Medan Tropical Canning</span></li>
-                        <li><span class="flex min-h-12 items-center justify-center rounded-full border border-[#a9c9df] bg-[#d2edff] px-5 text-center text-sm font-medium text-slate-800 shadow-sm transition-all duration-300 ease-in-out hover:scale-105 hover:bg-[#bee5ff] hover:shadow-md">PT. Medan Tropical Canning</span></li>
-                        <li><span class="flex min-h-12 items-center justify-center rounded-full border border-[#a9c9df] bg-[#d2edff] px-5 text-center text-sm font-medium text-slate-800 shadow-sm transition-all duration-300 ease-in-out hover:scale-105 hover:bg-[#bee5ff] hover:shadow-md">PT. Daisen Wood Frame</span></li>
-                        <li class="sm:col-start-2 lg:col-start-auto"><span class="flex min-h-12 items-center justify-center rounded-full border border-[#a9c9df] bg-[#d2edff] px-5 text-center text-sm font-medium text-slate-800 shadow-sm transition-all duration-300 ease-in-out hover:scale-105 hover:bg-[#bee5ff] hover:shadow-md">PT. Xinfung Industry Indonesia</span></li>
+                        <li data-reveal="up"><span class="flex min-h-12 items-center justify-center rounded-full border border-[#a9c9df] bg-[#d2edff] px-5 text-center text-sm font-medium text-slate-800 shadow-sm transition-all duration-300 ease-in-out hover:scale-105 hover:bg-[#bee5ff] hover:shadow-md">PT. Medan Tropical Canning</span></li>
+                        <li data-reveal="up"><span class="flex min-h-12 items-center justify-center rounded-full border border-[#a9c9df] bg-[#d2edff] px-5 text-center text-sm font-medium text-slate-800 shadow-sm transition-all duration-300 ease-in-out hover:scale-105 hover:bg-[#bee5ff] hover:shadow-md">PT. Medan Tropical Canning</span></li>
+                        <li data-reveal="up"><span class="flex min-h-12 items-center justify-center rounded-full border border-[#a9c9df] bg-[#d2edff] px-5 text-center text-sm font-medium text-slate-800 shadow-sm transition-all duration-300 ease-in-out hover:scale-105 hover:bg-[#bee5ff] hover:shadow-md">PT. Daisen Wood Frame</span></li>
+                        <li class="sm:col-start-2 lg:col-start-auto" data-reveal="up"><span class="flex min-h-12 items-center justify-center rounded-full border border-[#a9c9df] bg-[#d2edff] px-5 text-center text-sm font-medium text-slate-800 shadow-sm transition-all duration-300 ease-in-out hover:scale-105 hover:bg-[#bee5ff] hover:shadow-md">PT. Xinfung Industry Indonesia</span></li>
                     </ul>
                 </div>
             </section>
 
             <section class="bg-white px-5 py-12 sm:px-8 sm:py-16" aria-labelledby="testimonial-title">
                 <div class="mx-auto max-w-6xl">
-                    <p class="mb-1 text-sm font-bold text-[#0871c4]">Testimonial Eksekutif</p>
-                    <h2 id="testimonial-title" class="max-w-3xl text-2xl font-bold leading-tight tracking-tight text-[#103e7d] sm:text-3xl">
+                    <p class="mb-1 text-sm font-bold text-[#0871c4]" data-reveal="up">Testimonial Eksekutif</p>
+                    <h2 id="testimonial-title" class="max-w-3xl text-2xl font-bold leading-tight tracking-tight text-[#103e7d] sm:text-3xl" data-reveal="up">
                         Dukungan Nyata dari Para Pemimpin Industri
                     </h2>
 
                     <div class="mt-7 flex flex-col gap-5 sm:mt-8">
-                        <article class="rounded-2xl border border-[#c6d8e4] bg-[#eff9ff] p-5 shadow-sm transition-all duration-300 ease-in-out hover:border-[#8dbbda] hover:shadow-lg sm:p-7">
+                        <article class="rounded-2xl border border-[#c6d8e4] bg-[#eff9ff] p-5 shadow-sm transition-all duration-300 ease-in-out hover:border-[#8dbbda] hover:shadow-lg sm:p-7" data-reveal="left">
                             <div class="flex flex-wrap items-center gap-4">
                                 <img class="h-10 w-10 rounded-full object-cover" src="{{ asset('images/foto-mr-ck.png') }}" alt="Foto Mr. CK" width="40" height="40" loading="lazy">
                                 <div class="flex gap-1 text-2xl leading-none text-[#e6e900]" role="img" aria-label="5 dari 5 bintang">
@@ -228,7 +228,7 @@
                             <p class="text-sm text-[#3984ff]">VP Information Technology - Mitra Logistik Multinasional</p>
                         </article>
 
-                        <article class="rounded-2xl border border-[#c6d8e4] bg-[#eff9ff] p-5 shadow-sm transition-all duration-300 ease-in-out hover:border-[#8dbbda] hover:shadow-lg sm:p-7">
+                        <article class="rounded-2xl border border-[#c6d8e4] bg-[#eff9ff] p-5 shadow-sm transition-all duration-300 ease-in-out hover:border-[#8dbbda] hover:shadow-lg sm:p-7" data-reveal="right">
                             <div class="flex flex-wrap items-center gap-4">
                                 <img class="h-10 w-10 rounded-full object-cover" src="{{ asset('images/foto-snoop-dog.png') }}" alt="Foto Snoop Dog" width="40" height="40" loading="lazy">
                                 <div class="flex gap-1 text-2xl leading-none text-[#e6e900]" role="img" aria-label="5 dari 5 bintang">
@@ -242,7 +242,7 @@
                             <p class="text-sm text-[#3984ff]">Head of Logistics &amp; Customs - Manufaktur Surabaya</p>
                         </article>
 
-                        <article class="rounded-2xl border border-[#c6d8e4] bg-[#eff9ff] p-5 shadow-sm transition-all duration-300 ease-in-out hover:border-[#8dbbda] hover:shadow-lg sm:p-7">
+                        <article class="rounded-2xl border border-[#c6d8e4] bg-[#eff9ff] p-5 shadow-sm transition-all duration-300 ease-in-out hover:border-[#8dbbda] hover:shadow-lg sm:p-7" data-reveal="left">
                             <div class="flex flex-wrap items-center gap-4">
                                 <img class="h-10 w-10 rounded-full object-cover" src="{{ asset('images/foto-napoleon.png') }}" alt="Foto Napoleon" width="40" height="40" loading="lazy">
                                 <div class="flex gap-1 text-2xl leading-none text-[#e6e900]" role="img" aria-label="5 dari 5 bintang">

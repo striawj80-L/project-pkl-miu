@@ -34,27 +34,62 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const productGrid = document.querySelector('[data-product-card-grid]');
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     if (productGrid) {
         const productCards = Array.from(productGrid.querySelectorAll('[data-product-card]'));
         const productDetails = document.querySelectorAll('[data-product-details]');
         const productButtons = productGrid.querySelectorAll('[data-product-select]');
         const desktopLayout = window.matchMedia('(min-width: 640px)');
+        const panelHideTimers = new Map();
         let selectedProductCard;
 
         const arrangeCards = (selectedCard) => {
+            const previousPositions = new Map(
+                productCards.map((card) => [card, card.getBoundingClientRect()]),
+            );
             const otherCards = productCards.filter((card) => card !== selectedCard);
             const cardOrder = desktopLayout.matches
                 ? [otherCards[0], selectedCard, otherCards[1]]
                 : [selectedCard, ...otherCards];
 
             productGrid.replaceChildren(...cardOrder);
+
+            if (!prefersReducedMotion) {
+                requestAnimationFrame(() => {
+                    productCards.forEach((card) => {
+                        const previousPosition = previousPositions.get(card);
+
+                        if (!previousPosition) {
+                            return;
+                        }
+
+                        const currentPosition = card.getBoundingClientRect();
+                        const offsetX = previousPosition.left - currentPosition.left;
+                        const offsetY = previousPosition.top - currentPosition.top;
+
+                        if (offsetX !== 0 || offsetY !== 0) {
+                            card.animate([
+                                { translate: `${offsetX}px ${offsetY}px` },
+                                { translate: '0px 0px' },
+                            ], {
+                                duration: 460,
+                                easing: 'cubic-bezier(0.2, 0.75, 0.25, 1)',
+                            });
+                        }
+                    });
+                });
+            }
         };
 
         const selectProduct = (productId) => {
             const selectedCard = productCards.find((card) => card.dataset.productCard === productId);
 
             if (!selectedCard) {
+                return;
+            }
+
+            if (selectedCard === selectedProductCard) {
                 return;
             }
 
@@ -70,7 +105,38 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             productDetails.forEach((panel) => {
-                panel.hidden = panel.dataset.productDetails !== productId;
+                const existingTimer = panelHideTimers.get(panel);
+
+                if (existingTimer) {
+                    window.clearTimeout(existingTimer);
+                    panelHideTimers.delete(panel);
+                }
+
+                panel.classList.remove('is-leaving');
+
+                if (panel.dataset.productDetails === productId) {
+                    panel.hidden = false;
+
+                    return;
+                }
+
+                if (panel.hidden || prefersReducedMotion) {
+                    panel.hidden = true;
+
+                    return;
+                }
+
+                panel.classList.add('is-leaving');
+                const timer = window.setTimeout(() => {
+                    if (selectedProductCard?.dataset.productCard !== panel.dataset.productDetails) {
+                        panel.hidden = true;
+                        panel.classList.remove('is-leaving');
+                    }
+
+                    panelHideTimers.delete(panel);
+                }, 180);
+
+                panelHideTimers.set(panel, timer);
             });
         };
 
@@ -94,7 +160,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const revealElements = document.querySelectorAll('[data-reveal]');
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     if (revealElements.length > 0 && 'IntersectionObserver' in window && !prefersReducedMotion) {
         document.documentElement.classList.add('has-scroll-reveal');

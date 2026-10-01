@@ -77,6 +77,11 @@ body {
     animation: product-details-enter 480ms cubic-bezier(0.2, 0.75, 0.25, 1) both;
 }
 
+.product-details__panel.is-leaving {
+    animation: product-details-exit 180ms ease both;
+    pointer-events: none;
+}
+
 @keyframes product-details-enter {
     from {
         opacity: 0;
@@ -86,6 +91,13 @@ body {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes product-details-exit {
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
     }
 }
 
@@ -541,11 +553,37 @@ body {
     transform: translate(0, 0);
 }
 
+.has-scroll-reveal .product-card.will-reveal {
+    transition:
+        opacity 650ms ease,
+        transform 650ms cubic-bezier(0.2, 0.75, 0.25, 1),
+        box-shadow 280ms ease,
+        border-color 280ms ease,
+        background-color 280ms ease;
+}
+
+.has-scroll-reveal .support-card.will-reveal,
+.has-scroll-reveal a.contact-detail.will-reveal {
+    transition:
+        opacity 650ms ease,
+        transform 650ms cubic-bezier(0.2, 0.75, 0.25, 1),
+        box-shadow 240ms ease,
+        border-color 240ms ease,
+        background-color 240ms ease,
+        color 200ms ease;
+}
+
+.product-card-grid [data-reveal]:nth-child(2),
+.contact-details [data-reveal]:nth-child(2),
+.support-grid [data-reveal]:nth-child(2),
 .about-timeline__items [data-reveal]:nth-child(2),
 .about-values__grid [data-reveal]:nth-child(2) {
     transition-delay: 90ms;
 }
 
+.product-card-grid [data-reveal]:nth-child(3),
+.contact-details [data-reveal]:nth-child(3),
+.support-grid [data-reveal]:nth-child(3),
 .about-timeline__items [data-reveal]:nth-child(3),
 .about-values__grid [data-reveal]:nth-child(3) {
     transition-delay: 180ms;
@@ -880,6 +918,17 @@ body {
     overflow-wrap: anywhere;
 }
 
+.contact-detail a,
+a.contact-detail,
+.contact-detail {
+    transition: color 200ms ease, transform 220ms ease;
+}
+
+a.contact-detail:hover {
+    color: #07528a;
+    transform: translateY(-4px);
+}
+
 .contact-detail__icon,
 .support-card__icon {
     display: grid;
@@ -894,6 +943,12 @@ body {
     height: 52px;
     margin-bottom: 4px;
     border-radius: 50%;
+    transition: color 200ms ease, background-color 200ms ease, transform 220ms ease;
+}
+
+a.contact-detail:hover .contact-detail__icon {
+    transform: scale(1.08);
+    background: #c7e5ff;
 }
 
 .contact-detail__icon svg {
@@ -942,12 +997,26 @@ body {
     border: 1px solid rgba(105, 159, 202, 0.13);
     border-radius: 18px;
     background: rgba(255, 255, 255, 0.62);
+    box-shadow: 0 0 0 rgba(24, 79, 127, 0);
+    transition: transform 240ms ease, box-shadow 240ms ease, border-color 240ms ease;
+}
+
+.support-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(57, 138, 197, 0.36);
+    box-shadow: 0 16px 36px rgba(24, 79, 127, 0.12);
 }
 
 .support-card__icon {
     width: 72px;
     height: 72px;
     border-radius: 16px;
+    transition: transform 240ms ease, background-color 240ms ease;
+}
+
+.support-card:hover .support-card__icon {
+    transform: scale(1.06);
+    background: #c7e5ff;
 }
 
 .support-card__icon svg {
@@ -984,6 +1053,13 @@ body {
 
 .support-card a:hover {
     color: #07528a;
+}
+
+.contact-details [data-reveal]:nth-child(2),
+.support-grid [data-reveal]:nth-child(2),
+.contact-details [data-reveal]:nth-child(3),
+.support-grid [data-reveal]:nth-child(3) {
+    transition-delay: 100ms;
 }
 
 @media (max-width: 760px) {
@@ -1220,6 +1296,10 @@ body {
     }
 
     .product-details__panel:not([hidden]) {
+        animation: none;
+    }
+
+    .product-details__panel.is-leaving {
         animation: none;
     }
 }

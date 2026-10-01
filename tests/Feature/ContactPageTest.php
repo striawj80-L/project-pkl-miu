@@ -17,6 +17,8 @@ class ContactPageTest extends TestCase
             ->assertSee('Hubungi Kami')
             ->assertSee('Konsultasikan solusi yang Anda butuhkan')
             ->assertSee('ptmitrainovasinggul@yahoo.com')
+            ->assertSee('data-reveal="left"', false)
+            ->assertSee('data-reveal="right"', false)
             ->assertSee('contact-hero', false)
             ->assertSee('aria-current="page"', false);
     }
