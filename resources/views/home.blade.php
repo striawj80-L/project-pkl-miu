@@ -49,10 +49,11 @@
                         <article class="home-solution-card" data-reveal="up">
                             <img src="{{ asset('images/home-it-inventory.png') }}" alt="Ilustrasi dashboard IT Inventory" width="160" height="130" loading="lazy">
                             <div>
-                                <h3>IT Inventory App</h3>
+                                <h3>IT Inventory App (ERP)</h3>
                                 <p>
-                                    Kelola persediaan, aset, dan aktivitas operasional dalam satu
-                                    sistem yang terintegrasi dan mudah dipantau.
+                                    Kami percaya efisiensi bukan hanya soal angka, tapi tentang bagaimana teknologi mempermudah manusia.
+                                    Melalui IT Inventory App, perusahaan dapat memantau seluruh perangkat, lisensi, dan aset digital
+                                    secara real-time — tanpa lagi laporan manual yang memakan waktu.
                                 </p>
                                 <a href="{{ route('product') }}">Selengkapnya <span aria-hidden="true">→</span></a>
                             </div>
@@ -62,8 +63,9 @@
                             <div>
                                 <h3>CN App</h3>
                                 <p>
-                                    Permudah pembuatan, validasi, dan pelacakan dokumen pengiriman
-                                    digital melalui satu alur kerja.
+                                    Dalam dunia bisnis yang serba cepat, komunikasi internal yang efisien adalah segalanya.
+                                    Dengan CN App berbasis CEISA 4.0, kami membantu perusahaan menyatukan data lintas
+                                    departemen melalui sistem yang aman dan mudah diakses.
                                 </p>
                                 <a href="{{ route('product') }}">Selengkapnya <span aria-hidden="true">→</span></a>
                             </div>
@@ -73,8 +75,10 @@
                             <div>
                                 <h3>Basic Internal App</h3>
                                 <p>
-                                    Aplikasi internal sesuai kebutuhan untuk menyederhanakan
-                                    koordinasi dan pekerjaan rutin tim.
+                                    Bagi banyak perusahaan kecil dan menengah, digitalisasi sering terdengar mahal dan rumit.
+                                    Kami ingin mengubah pandangan itu. Melalui Internal App, kami membantu tim Anda beralih
+                                    dari proses manual ke sistem digital yang sederhana namun efektif — mulai dari pengajuan
+                                    approval, absensi, hingga manajemen gudang.
                                 </p>
                                 <a href="{{ route('product') }}">Selengkapnya <span aria-hidden="true">→</span></a>
                             </div>
@@ -85,15 +89,10 @@
 
             <section class="home-support" aria-labelledby="support-title">
                 <div class="home-container home-support__inner">
-                    <img src="{{ asset('images/home-indonesia.png') }}" alt="Ilustrasi peta wilayah Indonesia" width="440" height="240" loading="lazy" data-reveal="left">
+                    <img src="{{ asset('images/indonesia-removebg-preview 1.png') }}" alt="Ilustrasi peta kepulauan Indonesia" width="440" height="240" loading="lazy" data-reveal="left">
                     <div data-reveal="right">
-                        <p class="home-eyebrow">Siap mendampingi bisnis Anda</p>
                         <h2 id="support-title">24/7 Support</h2>
-                        <p>
-                            Tim kami siap membantu memastikan sistem Anda berjalan optimal dan
-                            kebutuhan bisnis tertangani.
-                        </p>
-                        <a class="home-text-link" href="{{ route('contact') }}">Hubungi tim kami <span aria-hidden="true">→</span></a>
+                        <p>Melayani client di seluruh Indonesia</p>
                     </div>
                 </div>
             </section>
@@ -108,11 +107,12 @@
                         <article class="home-work-card" data-reveal="up">
                             <img src="{{ asset('images/home-city.png') }}" alt="Panorama kawasan perkotaan" width="300" height="170" loading="lazy">
                             <div>
-                                <h3>Digitalisasi Operasional Industri</h3>
+                                <h3>Regional</h3>
                                 <p>
-                                    Kami membantu perusahaan membangun proses yang lebih terhubung
-                                    melalui solusi digital yang disesuaikan dengan kegiatan
-                                    operasional mereka.
+                                    Dari Pulau Jawa hingga Pulau Sumatera, kami telah berkolaborasi dengan lebih dari 30 perusahaan
+                                    dalam mengembangkan aplikasi digital yang meningkatkan efisiensi operasional dan keandalan data.
+                                    Setiap proyek kami dirancang dengan pendekatan profesional, hasil nyata, dan teknologi terkini
+                                    untuk mendorong pertumbuhan bisnis klien kami.
                                 </p>
                             </div>
                         </article>
@@ -121,8 +121,11 @@
                             <div>
                                 <h3>CEISA Professional</h3>
                                 <p>
-                                    Solusi kami mendukung kebutuhan kepabeanan dan proses terkait
-                                    CEISA 4.0 agar pekerjaan lebih tertib, akurat, dan siap ditelusuri.
+                                    Kami turut berkontribusi dalam pengembangan sistem CEISA 4.0 dengan mendukung digitalisasi proses
+                                    ekspor-impor Indonesia melalui platform yang aman, modern, dan terintegrasi dengan kebutuhan industri.
+                                    Solusi IT Inventory kami membantu perusahaan menyiapkan, mengirim, dan memantau dokumen kepabeanan
+                                    yang terhubung dengan CEISA 4.0 secara lebih mudah, cepat, dan efisien, sekaligus meningkatkan
+                                    transparansi alur kerja dan data antar lembaga.
                                 </p>
                             </div>
                         </article>
@@ -131,8 +134,10 @@
                             <div>
                                 <h3>Widely Diverse Partners</h3>
                                 <p>
-                                    Bersama para mitra, kami merancang teknologi yang relevan dengan
-                                    tantangan tiap bisnis dan mendukung pertumbuhan jangka panjang.
+                                    Mulai dari sistem inventaris IT, aplikasi internal kantor, hingga platform CN App (CEISA 4.0),
+                                    kami membantu perusahaan meningkatkan efisiensi, akurasi, dan pertumbuhan bisnis melalui teknologi
+                                    yang andal dan terukur. Fleksibilitas kami dalam menyesuaikan sistem membuat setiap aplikasi
+                                    menjadi relevan, scalable, dan mudah diadopsi oleh tim internal klien.
                                 </p>
                             </div>
                         </article>
@@ -146,35 +151,34 @@
                         <p class="home-eyebrow">FAQ</p>
                         <h2 id="faq-title">Most Asked Question</h2>
                         <p>
-                            Temukan jawaban dari pertanyaan yang sering kami terima. Hubungi kami
-                            bila Anda ingin tahu lebih lanjut.
+                            Didn’t find what you’re looking for? Let us know, We’ve got real humans ready to answer.
                         </p>
                     </div>
 
                     <div class="home-faq__list" data-reveal="up">
                         <details>
-                            <summary>Apa itu IT Inventory dan bagaimana manfaatnya bagi bisnis?</summary>
-                            <p>IT Inventory membantu mencatat dan memantau persediaan serta pergerakan barang dalam satu sistem yang rapi dan mudah ditelusuri.</p>
+                            <summary>Apa itu IT Inventory App dan bagaimana manfaatnya bagi bisnis?</summary>
+                            <p>IT Inventory App cocok untuk perusahaan yang ingin mendapatkan fasilitas seperti KB,GB,KEK,KITE,dll, App ini akan memberikan kemudahan untuk user dalam penginputan dan pelaporan fasilitas tersebut.</p>
                         </details>
                         <details>
-                            <summary>Apakah menggunakan CEISA 4.0?</summary>
-                            <p>Solusi MIU mendukung kebutuhan integrasi dan proses terkait CEISA 4.0 sesuai kebutuhan operasional perusahaan.</p>
+                            <summary>Apa keunggulan CN App (CEISA 4.0)?</summary>
+                            <p>CN App yang kami sediakan mengikuti standar CEISA 4.0 (Customs-Excise Information System and Automation) dan mendukung pengelolaan e-consignment note (resi digital) secara aman, cepat, dan terintegrasi, sehingga cocok untuk perusahaan logistik, ekspor-impor, atau distribusi.</p>
                         </details>
                         <details>
-                            <summary>Apa saja bisnis yang dapat menggunakan layanan MIU?</summary>
-                            <p>Kami membantu berbagai perusahaan, termasuk manufaktur, logistik, serta perusahaan dengan kebutuhan kepabeanan dan pengelolaan inventaris.</p>
+                            <summary>Apa itu Basic Internal App dan siapa yang cocok menggunakannya?</summary>
+                            <p>Basic Internal App merupakan solusi digital untuk otomatisasi pekerjaan internal, seperti manajemen gudang, absensi, approval, dan pelaporan. Ideal bagi UMKM atau perusahaan yang ingin digitalisasi tanpa biaya tinggi.</p>
                         </details>
                         <details>
-                            <summary>Apakah solusi dapat disesuaikan dengan kebutuhan perusahaan?</summary>
-                            <p>Ya. Kami memulai dengan memahami proses bisnis Anda, lalu merancang solusi yang sesuai dengan alur kerja dan tujuan perusahaan.</p>
+                            <summary>Apakah solusi yang ditawarkan bisa disesuaikan (custom) dengan kebutuhan perusahaan kami?</summary>
+                            <p>Tentu bisa, setiap proyek kami mulai dengan analisis kebutuhan bisnis untuk memastikan desain, fitur, dan workflow benar-benar sesuai tujuan perusahaan Anda.</p>
                         </details>
                         <details>
-                            <summary>Apakah tersedia layanan konsultasi sebelum implementasi?</summary>
-                            <p>Tim kami siap berdiskusi dan membantu memetakan kebutuhan sebelum Anda menentukan langkah implementasi.</p>
+                            <summary>Apakah tersedia layanan after-sales dan maintenance?</summary>
+                            <p>Tersedia, kami menyediakan layanan maintenance berkala, bug fixing, update fitur, dan technical support dari tim MIU agar aplikasi Anda selalu optimal dan aman digunakan.</p>
                         </details>
                         <details>
-                            <summary>Apakah MIU dapat membantu bisnis yang sedang berkembang?</summary>
-                            <p>Kami menyediakan sistem yang dapat mendukung efisiensi operasional seiring perubahan dan pertumbuhan bisnis Anda.</p>
+                            <summary>Apakah data perusahaan kami akan aman?</summary>
+                            <p>Keamanan adalah prioritas utama kami. Setiap sistem yang kami bangun dilengkapi dengan enkripsi, role-based access, dan sistem autentikasi.</p>
                         </details>
                     </div>
                 </div>

@@ -1490,6 +1490,10 @@ a.contact-detail:hover .contact-detail__icon {
     padding: clamp(28px, 4vw, 48px) 24px;
 }
 
+.home-solutions {
+    background: linear-gradient(180deg, #b8e6f2 0%, #fff 100%);
+}
+
 .home-section__heading {
     max-width: 740px;
     margin: 0 auto 18px;
@@ -1594,7 +1598,7 @@ a.contact-detail:hover .contact-detail__icon {
 
 .home-support {
     padding: 16px 24px;
-    background: linear-gradient(100deg, rgba(197, 235, 247, 0.32), rgba(153, 219, 239, 0.72));
+    background: #fff;
 }
 
 .home-support__inner {
@@ -1606,25 +1610,29 @@ a.contact-detail:hover .contact-detail__icon {
 
 .home-support__inner > img {
     width: 100%;
-    max-height: 180px;
+    max-height: 200px;
     object-fit: contain;
+    filter: drop-shadow(0 0 12px rgba(42, 166, 255, 0.72));
 }
 
 .home-support h2 {
+    color: #727272;
     font-size: clamp(1.65rem, 3vw, 2.3rem);
 }
 
-.home-support__inner > div > p:not(.home-eyebrow) {
+.home-support__inner > div > p {
     max-width: 460px;
-    margin: 6px 0 0;
-    color: #3e586d;
-    font-size: 0.76rem;
+    margin: 2px 0 0 5px;
+    color: #727272;
+    font-size: 0.82rem;
+    font-weight: 650;
     line-height: 1.45;
 }
 
 .home-work {
     padding-top: 30px;
     padding-bottom: 34px;
+    background: linear-gradient(180deg, #fff 0%, #d9f8fc 52%, #fff 100%);
 }
 
 .home-work .home-section__heading {
@@ -1645,7 +1653,7 @@ a.contact-detail:hover .contact-detail__icon {
     padding: 6px;
     border: 1px solid #bfced8;
     border-radius: 4px;
-    background: rgba(255, 255, 255, 0.92);
+    background: linear-gradient(105deg, #d8f5fa 0%, #f9feff 100%);
     box-shadow: 0 5px 15px rgba(35, 83, 119, 0.06);
 }
 
@@ -1664,7 +1672,7 @@ a.contact-detail:hover .contact-detail__icon {
 .home-faq {
     padding-top: 28px;
     padding-bottom: 34px;
-    background: rgba(255, 255, 255, 0.66);
+    background: linear-gradient(180deg, #fff 0%, #d9f1f8 100%);
 }
 
 .home-faq__container {
@@ -1680,6 +1688,10 @@ a.contact-detail:hover .contact-detail__icon {
     font-size: 0.76rem;
 }
 
+.home-faq .home-section__heading .home-eyebrow {
+    text-align: center;
+}
+
 .home-faq__list {
     display: grid;
     gap: 6px;
@@ -1690,6 +1702,28 @@ a.contact-detail:hover .contact-detail__icon {
     border-radius: 5px;
     background: rgba(255, 255, 255, 0.93);
     box-shadow: 0 3px 9px rgba(32, 92, 131, 0.05);
+    transition:
+        border-color 180ms ease,
+        box-shadow 180ms ease,
+        transform 180ms ease,
+        background-color 180ms ease;
+}
+
+.home-faq__list details:hover {
+    transform: translateY(-2px);
+    border-color: #438ec2;
+    background: #f1faff;
+    box-shadow: 0 7px 16px rgba(32, 92, 131, 0.14);
+}
+
+.home-faq__list details:focus-within {
+    outline: 2px solid rgba(18, 111, 194, 0.5);
+    outline-offset: 2px;
+}
+
+.home-faq__list details[open] {
+    border-color: #438ec2;
+    box-shadow: 0 5px 14px rgba(32, 92, 131, 0.1);
 }
 
 .home-faq__list summary {
@@ -1701,6 +1735,11 @@ a.contact-detail:hover .contact-detail__icon {
     line-height: 1.5;
     cursor: pointer;
     list-style: none;
+    transition: color 180ms ease;
+}
+
+.home-faq__list summary:hover {
+    color: #0871c4;
 }
 
 .home-faq__list summary::-webkit-details-marker {
@@ -1918,8 +1957,8 @@ a.contact-detail:hover .contact-detail__icon {
         max-height: 126px;
     }
 
-    .home-support__inner > div > p:not(.home-eyebrow) {
-        margin-left: 0;
+    .home-support__inner > div > p {
+        margin-left: 3px;
     }
 
     .home-support .home-eyebrow {
@@ -1930,8 +1969,8 @@ a.contact-detail:hover .contact-detail__icon {
         font-size: 1.2rem;
     }
 
-    .home-support__inner > div > p:not(.home-eyebrow) {
-        font-size: 0.62rem;
+    .home-support__inner > div > p {
+        font-size: 0.58rem;
     }
 
     .home-text-link {
