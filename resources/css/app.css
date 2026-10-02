@@ -612,8 +612,10 @@ body {
     place-items: center;
     padding: 82px 24px 24px;
     color: #fff;
-    background-image: linear-gradient(180deg, rgba(9, 55, 111, 0.32), rgba(9, 55, 111, 0.08)), url('/images/HomeBG.png');
+    background-image: linear-gradient(180deg, rgba(9, 55, 111, 0.32), rgba(9, 55, 111, 0.08)), url('/images/RenameBG.png');
+    background-attachment: fixed, fixed;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
