@@ -38,7 +38,6 @@
             <section class="home-section home-solutions" aria-labelledby="solutions-title">
                 <div class="home-container">
                     <div class="home-section__heading" data-reveal="up">
-                        <p class="home-eyebrow">Solusi digital untuk operasional Anda</p>
                         <h2 id="solutions-title">Solution for your Business</h2>
                         <p>
                             Teknologi yang tepat membantu bisnis bergerak lebih cepat, tertata, dan
@@ -102,12 +101,11 @@
             <section class="home-section home-work" aria-labelledby="work-title">
                 <div class="home-container">
                     <div class="home-section__heading" data-reveal="up">
-                        <p class="home-eyebrow">Pengalaman dan kolaborasi</p>
                         <h2 id="work-title">Our Work</h2>
                     </div>
 
                     <div class="home-work__list">
-                        <article class="home-work-card" data-reveal="left">
+                        <article class="home-work-card" data-reveal="up">
                             <img src="{{ asset('images/home-city.png') }}" alt="Panorama kawasan perkotaan" width="300" height="170" loading="lazy">
                             <div>
                                 <h3>Digitalisasi Operasional Industri</h3>
@@ -118,7 +116,7 @@
                                 </p>
                             </div>
                         </article>
-                        <article class="home-work-card" data-reveal="right">
+                        <article class="home-work-card" data-reveal="up">
                             <img src="{{ asset('images/home-ceisa.png') }}" alt="CEISA 4.0, Customs-Excise Information System and Automation" width="300" height="170" loading="lazy">
                             <div>
                                 <h3>CEISA Professional</h3>
@@ -128,7 +126,7 @@
                                 </p>
                             </div>
                         </article>
-                        <article class="home-work-card" data-reveal="left">
+                        <article class="home-work-card" data-reveal="up">
                             <img src="{{ asset('images/home-team.png') }}" alt="Tim profesional berdiskusi bersama" width="300" height="170" loading="lazy">
                             <div>
                                 <h3>Widely Diverse Partners</h3>
