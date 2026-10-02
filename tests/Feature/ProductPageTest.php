@@ -8,7 +8,7 @@ class ProductPageTest extends TestCase
 {
     public function test_product_and_testimonial_page_renders_assets_and_contact_links(): void
     {
-        $response = $this->get(route('home'));
+        $response = $this->get(route('product'));
 
         $response
             ->assertOk()

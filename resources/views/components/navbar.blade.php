@@ -20,13 +20,13 @@
     </button>
 
     <div class="site-nav__links" id="primary-navigation">
-        <a href="{{ route('about') }}" @class(['is-active' => $active === 'about']) @if ($active === 'about') aria-current="page" @endif>
-            About Us
-        </a>
         <a href="{{ route('home') }}" @class(['is-active' => $active === 'home']) @if ($active === 'home') aria-current="page" @endif>
             Home
         </a>
-        <a href="{{ route('home') }}#product" @class(['is-active' => $active === 'product']) @if ($active === 'product') aria-current="page" @endif>
+        <a href="{{ route('about') }}" @class(['is-active' => $active === 'about']) @if ($active === 'about') aria-current="page" @endif>
+            About Us
+        </a>
+        <a href="{{ route('product') }}" @class(['is-active' => $active === 'product']) @if ($active === 'product') aria-current="page" @endif>
             Product
         </a>
         <a href="{{ route('contact') }}" @class(['is-active' => $active === 'contact']) @if ($active === 'contact') aria-current="page" @endif>
