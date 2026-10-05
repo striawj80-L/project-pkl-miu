@@ -141,7 +141,7 @@
                 </div>
             </section>
 
-            <section class="about-commitment" aria-label="Komitmen layanan MIU">
+            <section class="about-commitment" id="commitment" aria-label="Komitmen layanan MIU">
                 <div class="about-commitment__copy">
                     <article data-reveal="left">
                         <h2>Memenuhi Kebutuhan Customer</h2>

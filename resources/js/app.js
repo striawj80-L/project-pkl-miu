@@ -15,20 +15,116 @@ document.addEventListener('DOMContentLoaded', () => {
             menuButton.setAttribute('aria-expanded', 'false');
         };
 
+        const closeSubmenus = (exceptItem = null) => {
+            mobileMenu.querySelectorAll('.site-nav__item.is-open').forEach((item) => {
+                if (item === exceptItem) {
+                    return;
+                }
+
+                item.classList.remove('is-open');
+                delete item.dataset.openByClick;
+                item.querySelector('[data-submenu-trigger]')?.setAttribute('aria-expanded', 'false');
+            });
+        };
+
         menuButton.addEventListener('click', () => {
             const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+
+            if (isExpanded) {
+                closeSubmenus();
+            }
 
             mobileMenu.classList.toggle('is-open', !isExpanded);
             menuButton.setAttribute('aria-expanded', String(!isExpanded));
         });
 
+        mobileMenu.querySelectorAll('[data-submenu-trigger]').forEach((submenuTrigger) => {
+            if (!(submenuTrigger instanceof HTMLAnchorElement)) {
+                return;
+            }
+
+            const submenuItem = submenuTrigger.closest('.site-nav__item');
+
+            if (!submenuItem) {
+                return;
+            }
+
+            submenuTrigger.addEventListener('click', (event) => {
+                const isPinnedOpen = submenuItem.dataset.openByClick === 'true';
+
+                if (window.matchMedia('(max-width: 900px)').matches && !isPinnedOpen) {
+                    event.preventDefault();
+                    closeSubmenus(submenuItem);
+                    submenuItem.dataset.openByClick = 'true';
+                    submenuItem.classList.add('is-open');
+                    submenuTrigger.setAttribute('aria-expanded', 'true');
+
+                    return;
+                }
+
+                delete submenuItem.dataset.openByClick;
+            });
+
+            submenuItem.addEventListener('pointerenter', (event) => {
+                if (event.pointerType === 'touch') {
+                    return;
+                }
+
+                submenuItem.classList.add('is-open');
+                submenuTrigger.setAttribute('aria-expanded', 'true');
+            });
+
+            submenuItem.addEventListener('pointerleave', (event) => {
+                if (event.pointerType === 'touch' || submenuItem.matches(':focus-within')) {
+                    return;
+                }
+
+                if (submenuItem.dataset.openByClick === 'true') {
+                    return;
+                }
+
+                submenuItem.classList.remove('is-open');
+                submenuTrigger.setAttribute('aria-expanded', 'false');
+            });
+
+            submenuItem.addEventListener('focusin', () => {
+                submenuItem.classList.add('is-open');
+                submenuTrigger.setAttribute('aria-expanded', 'true');
+            });
+
+            submenuItem.addEventListener('focusout', (event) => {
+                if (event.relatedTarget instanceof Node && submenuItem.contains(event.relatedTarget)) {
+                    return;
+                }
+
+                if (submenuItem.matches(':hover')) {
+                    return;
+                }
+
+                if (submenuItem.dataset.openByClick === 'true') {
+                    return;
+                }
+
+                submenuItem.classList.remove('is-open');
+                submenuTrigger.setAttribute('aria-expanded', 'false');
+            });
+        });
+
         mobileMenu.querySelectorAll('a').forEach((link) => {
-            link.addEventListener('click', closeMenu);
+            link.addEventListener('click', (event) => {
+                if (event.defaultPrevented) {
+                    return;
+                }
+
+                closeMenu();
+                closeSubmenus();
+            });
         });
 
         document.addEventListener('keydown', (event) => {
             if (event.key === 'Escape') {
                 closeMenu();
+                closeSubmenus();
             }
         });
     }
@@ -156,7 +252,24 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        selectProduct(productCards[0]?.dataset.productCard);
+        const requestedProductPanel = Array.from(productDetails).find((panel) => panel.id === window.location.hash.slice(1));
+
+        selectProduct(requestedProductPanel?.dataset.productDetails ?? productCards[0]?.dataset.productCard);
+
+        if (requestedProductPanel) {
+            window.requestAnimationFrame(() => requestedProductPanel.scrollIntoView());
+        }
+
+        window.addEventListener('hashchange', () => {
+            const targetPanel = Array.from(productDetails).find((panel) => panel.id === window.location.hash.slice(1));
+
+            if (!targetPanel?.dataset.productDetails) {
+                return;
+            }
+
+            selectProduct(targetPanel.dataset.productDetails);
+            window.requestAnimationFrame(() => targetPanel.scrollIntoView());
+        });
     }
 
     const faqItems = document.querySelectorAll('.home-faq__list details');
