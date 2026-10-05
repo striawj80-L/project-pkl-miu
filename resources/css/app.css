@@ -188,7 +188,7 @@ body {
     padding: 112px clamp(24px, 8vw, 120px) 64px;
     background-image:
         linear-gradient(90deg, rgba(5, 21, 70, 0.16), rgba(5, 21, 70, 0.46)),
-        url('/images/bg.jpg');
+        url('/images/AboutUsBG.png');
     background-attachment: fixed, fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -1790,7 +1790,11 @@ a.contact-detail:hover .contact-detail__icon {
     content: "−";
 }
 
-.home-faq__list details p {
+.home-faq__answer {
+    overflow: hidden;
+}
+
+.home-faq__answer p {
     margin: 0;
     padding: 0 12px 10px;
     color: #4b6073;

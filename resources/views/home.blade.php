@@ -158,27 +158,39 @@
                     <div class="home-faq__list" data-reveal="up">
                         <details>
                             <summary>Apa itu IT Inventory App dan bagaimana manfaatnya bagi bisnis?</summary>
-                            <p>IT Inventory App cocok untuk perusahaan yang ingin mendapatkan fasilitas seperti KB,GB,KEK,KITE,dll, App ini akan memberikan kemudahan untuk user dalam penginputan dan pelaporan fasilitas tersebut.</p>
+                            <div class="home-faq__answer" id="faq-answer-inventory" data-faq-answer>
+                                <p>IT Inventory App cocok untuk perusahaan yang ingin mendapatkan fasilitas seperti KB,GB,KEK,KITE,dll, App ini akan memberikan kemudahan untuk user dalam penginputan dan pelaporan fasilitas tersebut.</p>
+                            </div>
                         </details>
                         <details>
                             <summary>Apa keunggulan CN App (CEISA 4.0)?</summary>
-                            <p>CN App yang kami sediakan mengikuti standar CEISA 4.0 (Customs-Excise Information System and Automation) dan mendukung pengelolaan e-consignment note (resi digital) secara aman, cepat, dan terintegrasi, sehingga cocok untuk perusahaan logistik, ekspor-impor, atau distribusi.</p>
+                            <div class="home-faq__answer" id="faq-answer-cn-app" data-faq-answer>
+                                <p>CN App yang kami sediakan mengikuti standar CEISA 4.0 (Customs-Excise Information System and Automation) dan mendukung pengelolaan e-consignment note (resi digital) secara aman, cepat, dan terintegrasi, sehingga cocok untuk perusahaan logistik, ekspor-impor, atau distribusi.</p>
+                            </div>
                         </details>
                         <details>
                             <summary>Apa itu Basic Internal App dan siapa yang cocok menggunakannya?</summary>
-                            <p>Basic Internal App merupakan solusi digital untuk otomatisasi pekerjaan internal, seperti manajemen gudang, absensi, approval, dan pelaporan. Ideal bagi UMKM atau perusahaan yang ingin digitalisasi tanpa biaya tinggi.</p>
+                            <div class="home-faq__answer" id="faq-answer-basic-app" data-faq-answer>
+                                <p>Basic Internal App merupakan solusi digital untuk otomatisasi pekerjaan internal, seperti manajemen gudang, absensi, approval, dan pelaporan. Ideal bagi UMKM atau perusahaan yang ingin digitalisasi tanpa biaya tinggi.</p>
+                            </div>
                         </details>
                         <details>
                             <summary>Apakah solusi yang ditawarkan bisa disesuaikan (custom) dengan kebutuhan perusahaan kami?</summary>
-                            <p>Tentu bisa, setiap proyek kami mulai dengan analisis kebutuhan bisnis untuk memastikan desain, fitur, dan workflow benar-benar sesuai tujuan perusahaan Anda.</p>
+                            <div class="home-faq__answer" id="faq-answer-customization" data-faq-answer>
+                                <p>Tentu bisa, setiap proyek kami mulai dengan analisis kebutuhan bisnis untuk memastikan desain, fitur, dan workflow benar-benar sesuai tujuan perusahaan Anda.</p>
+                            </div>
                         </details>
                         <details>
                             <summary>Apakah tersedia layanan after-sales dan maintenance?</summary>
-                            <p>Tersedia, kami menyediakan layanan maintenance berkala, bug fixing, update fitur, dan technical support dari tim MIU agar aplikasi Anda selalu optimal dan aman digunakan.</p>
+                            <div class="home-faq__answer" id="faq-answer-maintenance" data-faq-answer>
+                                <p>Tersedia, kami menyediakan layanan maintenance berkala, bug fixing, update fitur, dan technical support dari tim MIU agar aplikasi Anda selalu optimal dan aman digunakan.</p>
+                            </div>
                         </details>
                         <details>
                             <summary>Apakah data perusahaan kami akan aman?</summary>
-                            <p>Keamanan adalah prioritas utama kami. Setiap sistem yang kami bangun dilengkapi dengan enkripsi, role-based access, dan sistem autentikasi.</p>
+                            <div class="home-faq__answer" id="faq-answer-security" data-faq-answer>
+                                <p>Keamanan adalah prioritas utama kami. Setiap sistem yang kami bangun dilengkapi dengan enkripsi, role-based access, dan sistem autentikasi.</p>
+                            </div>
                         </details>
                     </div>
                 </div>

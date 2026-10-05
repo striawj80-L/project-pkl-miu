@@ -159,6 +159,77 @@ document.addEventListener('DOMContentLoaded', () => {
         selectProduct(productCards[0]?.dataset.productCard);
     }
 
+    const faqItems = document.querySelectorAll('.home-faq__list details');
+
+    faqItems.forEach((faqItem) => {
+        const summary = faqItem.querySelector('summary');
+        const answer = faqItem.querySelector('[data-faq-answer]');
+
+        if (!(summary instanceof HTMLElement) || !(answer instanceof HTMLElement)) {
+            return;
+        }
+
+        const faqAnimations = new WeakMap();
+        faqItem.dataset.faqOpen = String(faqItem.open);
+        summary.setAttribute('aria-controls', answer.id);
+        summary.setAttribute('aria-expanded', String(faqItem.open));
+
+        summary.addEventListener('click', (event) => {
+            event.preventDefault();
+
+            const shouldOpen = faqItem.dataset.faqOpen !== 'true';
+            const currentHeight = answer.getBoundingClientRect().height;
+            const currentOpacity = Number.parseFloat(getComputedStyle(answer).opacity);
+            const startOpacity = currentHeight === 0
+                ? 0
+                : Number.isFinite(currentOpacity) ? currentOpacity : 1;
+
+            faqAnimations.get(answer)?.cancel();
+            faqItem.dataset.faqOpen = String(shouldOpen);
+            summary.setAttribute('aria-expanded', String(shouldOpen));
+
+            if (prefersReducedMotion) {
+                faqItem.open = shouldOpen;
+
+                return;
+            }
+
+            if (shouldOpen) {
+                faqItem.open = true;
+            }
+
+            const targetHeight = shouldOpen ? answer.scrollHeight : 0;
+            const animation = answer.animate([
+                {
+                    height: `${currentHeight}px`,
+                    opacity: startOpacity,
+                    transform: shouldOpen ? 'translateY(5px)' : 'translateY(0)',
+                },
+                {
+                    height: `${targetHeight}px`,
+                    opacity: shouldOpen ? 1 : 0,
+                    transform: 'translateY(0)',
+                },
+            ], {
+                duration: 320,
+                easing: 'cubic-bezier(0.2, 0.75, 0.25, 1)',
+            });
+
+            faqAnimations.set(answer, animation);
+            animation.onfinish = () => {
+                if (faqItem.dataset.faqOpen !== String(shouldOpen)) {
+                    return;
+                }
+
+                if (!shouldOpen) {
+                    faqItem.open = false;
+                }
+
+                faqAnimations.delete(answer);
+            };
+        });
+    });
+
     const revealElements = document.querySelectorAll('[data-reveal]');
 
     if (revealElements.length > 0 && 'IntersectionObserver' in window && !prefersReducedMotion) {
