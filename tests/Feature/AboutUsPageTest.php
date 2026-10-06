@@ -18,6 +18,8 @@ class AboutUsPageTest extends TestCase
             ->assertSee('Why Us')
             ->assertSee('We Value')
             ->assertSee('Memenuhi Kebutuhan Customer')
+            ->assertSee('site-footer', false)
+            ->assertSee('href="tel:+6285814409262"', false)
             ->assertSee('data-reveal="left"', false)
             ->assertSee('data-reveal="right"', false)
             ->assertSee('aria-current="page"', false)

@@ -216,11 +216,12 @@
 
                     <address>
                         <strong>Our Office</strong><br>
-                        Jl. Tanah Abang II No. 68A, Jakarta Pusat, DKI Jakarta<br>
-                        Indonesia
+                        Jl. Tanah Abang II No.68A, RT.1/RW.5, Petojo Selatan, Kecamatan Gambir,
+                        Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10160
                     </address>
                 </div>
             </section>
         </main>
+        <x-footer />
     </body>
 </html>

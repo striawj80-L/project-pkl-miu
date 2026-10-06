@@ -18,6 +18,9 @@ class ExampleTest extends TestCase
             ->assertOk()
             ->assertSee('data-faq-answer', false)
             ->assertSee('id="faq-answer-inventory"', false)
-            ->assertSee('Most Asked Question');
+            ->assertSee('Most Asked Question')
+            ->assertSee('site-footer', false)
+            ->assertSee('href="tel:+6285814409262"', false)
+            ->assertSee('href="mailto:ptmitrainovasinggul@yahoo.com"', false);
     }
 }

@@ -177,5 +177,6 @@
                 </div>
             </section>
         </main>
+        <x-footer />
     </body>
 </html>

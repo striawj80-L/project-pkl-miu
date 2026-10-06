@@ -31,6 +31,8 @@ class ProductPageTest extends TestCase
             ->assertSee('product-details-cn-app-title', false)
             ->assertSee('product-details-internal-app-title', false)
             ->assertSee('Optimalkan Operasional Internal dengan Aplikasi yang Terintegrasi dan Efisien')
+            ->assertSee('site-footer', false)
+            ->assertSee('href="mailto:ptmitrainovasinggul@yahoo.com"', false)
             ->assertSee('Centralized Data Management')
             ->assertSee('Smart Workflow Automation')
             ->assertSee(asset('images/ant-design_truck-outlined.png'), false)
