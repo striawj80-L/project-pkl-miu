@@ -932,23 +932,31 @@ body {
 
     .site-nav__submenu {
         position: static;
-        display: none;
+        display: grid;
         width: 100%;
         min-width: 0;
         flex-basis: 100%;
-        padding: 4px 8px 8px;
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 8px;
         border: 0;
         border-radius: 8px;
         background: rgba(7, 55, 109, 0.28);
         box-shadow: none;
-        opacity: 1;
-        transform: none;
-        transition: none;
-        visibility: visible;
+        opacity: 0;
+        transform: translateY(-4px);
+        transition:
+            max-height 220ms ease,
+            opacity 160ms ease,
+            transform 220ms ease,
+            padding 220ms ease,
+            visibility 220ms ease;
+        visibility: hidden;
     }
 
     .site-nav__item.is-open .site-nav__submenu {
-        display: grid;
+        max-height: 20rem;
+        padding: 4px 8px 8px;
     }
 
     .site-nav__links .site-nav__submenu a {
@@ -1509,23 +1517,31 @@ a.contact-detail:hover .contact-detail__icon {
 
     .site-nav__submenu {
         position: static;
-        display: none;
+        display: grid;
         width: 100%;
         min-width: 0;
         flex-basis: 100%;
-        padding: 4px 8px 8px;
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 8px;
         border: 0;
         border-radius: 8px;
         background: rgba(7, 55, 109, 0.28);
         box-shadow: none;
-        opacity: 1;
-        transform: none;
-        transition: none;
-        visibility: visible;
+        opacity: 0;
+        transform: translateY(-4px);
+        transition:
+            max-height 220ms ease,
+            opacity 160ms ease,
+            transform 220ms ease,
+            padding 220ms ease,
+            visibility 220ms ease;
+        visibility: hidden;
     }
 
     .site-nav__item.is-open .site-nav__submenu {
-        display: grid;
+        max-height: 20rem;
+        padding: 4px 8px 8px;
     }
 
     .site-nav__links .site-nav__submenu a {
