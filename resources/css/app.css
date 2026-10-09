@@ -633,7 +633,7 @@ body {
 
 .site-nav {
     position: relative;
-    z-index: 1;
+    z-index: 20;
     top: 0;
     left: 0;
     display: flex;
@@ -907,7 +907,7 @@ body {
         gap: 4px;
         box-sizing: border-box;
         padding: 10px 16px 14px;
-        background: rgba(32, 111, 189, 0.94);
+        background: rgba(32, 111, 189, 0.99);
         box-shadow: 0 14px 24px rgba(15, 50, 85, 0.14);
         transform: none;
     }
@@ -1484,7 +1484,7 @@ a.contact-detail:hover .contact-detail__icon {
         gap: 4px;
         box-sizing: border-box;
         padding: 10px 16px 14px;
-        background: rgba(32, 111, 189, 0.94);
+        background: rgba(32, 111, 189, 0.99);
         box-shadow: 0 14px 24px rgba(15, 50, 85, 0.14);
         transform: none;
     }
