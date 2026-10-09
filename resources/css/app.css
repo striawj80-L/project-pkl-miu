@@ -10,11 +10,13 @@
 }
 
 html {
+    overflow-x: clip;
     scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
+    overflow-x: clip;
 }
 
 .product-card-grid {
@@ -2256,5 +2258,38 @@ a.contact-detail:hover .contact-detail__icon {
         min-height: 28px;
         margin-top: 8px;
         font-size: 0.64rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-solutions__grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .home-solution-card,
+    .home-solution-card:last-child {
+        grid-column: auto;
+        grid-template-columns: minmax(64px, 0.26fr) minmax(0, 1fr);
+        gap: 10px;
+        min-height: 102px;
+        padding: 10px;
+    }
+
+    .home-solution-card img,
+    .home-solution-card:last-child img {
+        height: 82px;
+    }
+
+    .home-solution-card h3 {
+        font-size: 0.78rem;
+    }
+
+    .home-solution-card p {
+        font-size: 0.68rem;
+        line-height: 1.45;
+    }
+
+    .home-solution-card a {
+        font-size: 0.66rem;
     }
 }
