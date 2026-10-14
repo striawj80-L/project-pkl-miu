@@ -8,9 +8,10 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body>
+        <x-navbar active="contact" />
+
         <main class="contact-page">
             <section class="contact-hero" aria-labelledby="contact-title">
-                <x-navbar active="contact" />
                 <h1 id="contact-title" data-reveal="up">Contact Us</h1>
             </section>
 

@@ -198,12 +198,6 @@ body {
     color: #fff;
 }
 
-.about-hero .site-nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
 .about-hero__content {
     width: min(100%, 800px);
     text-align: right;
@@ -612,7 +606,7 @@ body {
     display: grid;
     min-height: 300px;
     place-items: center;
-    padding: 82px 24px 24px;
+    padding: 24px;
     color: #fff;
     background-image: linear-gradient(180deg, rgba(9, 55, 111, 0.32), rgba(9, 55, 111, 0.08)), url('/images/RenameBG.png');
     background-attachment: fixed, fixed;
@@ -632,10 +626,9 @@ body {
 }
 
 .site-nav {
-    position: relative;
+    position: sticky;
     z-index: 20;
     top: 0;
-    left: 0;
     display: flex;
     width: 100%;
     min-height: 76px;
@@ -648,10 +641,6 @@ body {
     background: rgba(32, 111, 189, 0.48);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-}
-
-.contact-hero .site-nav {
-    position: absolute;
 }
 
 .site-nav__brand {
@@ -1457,7 +1446,7 @@ a.contact-detail:hover .contact-detail__icon {
 
     .contact-hero {
         min-height: 270px;
-        padding-top: 112px;
+        padding-top: 24px;
     }
 
     .site-nav {
@@ -1640,12 +1629,6 @@ a.contact-detail:hover .contact-detail__icon {
 
 .home-header {
     position: relative;
-}
-
-.home-header .site-nav {
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 .home-hero {

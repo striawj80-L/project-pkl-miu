@@ -10,9 +10,7 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="m-0 font-sans text-slate-700 antialiased">
-        <header id="home" class="bg-[#a9c1ff]">
-            <x-navbar active="product" />
-        </header>
+        <x-navbar active="product" />
 
         <main>
             <section id="product" class="bg-gradient-to-b from-[#eaf2ff] via-[#f7faff] to-white px-5 py-14 sm:px-8 sm:py-16 lg:py-20" aria-labelledby="product-title">

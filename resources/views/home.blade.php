@@ -10,9 +10,9 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="home-page m-0 font-sans text-slate-700 antialiased">
-        <header class="home-header">
-            <x-navbar active="home" />
+        <x-navbar active="home" />
 
+        <header class="home-header">
             <section class="home-hero" aria-labelledby="home-title">
                 <div class="home-hero__inner">
                     <div class="home-hero__brand" data-reveal="left">

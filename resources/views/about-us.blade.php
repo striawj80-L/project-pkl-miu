@@ -10,9 +10,10 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="m-0 font-sans text-slate-700 antialiased">
+        <x-navbar active="about" />
+
         <header id="about-home">
             <section class="about-hero" aria-labelledby="about-title">
-                <x-navbar active="about" />
                 <div class="about-hero__content" data-reveal="up">
                     <p>Memberikan dedikasi kami</p>
                     <h1 id="about-title">PT Mitra Inovasi Unggul</h1>
