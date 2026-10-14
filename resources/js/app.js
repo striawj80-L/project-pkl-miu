@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 { translate: `${offsetX}px ${offsetY}px` },
                                 { translate: '0px 0px' },
                             ], {
-                                duration: 460,
+                                duration: 560,
                                 easing: 'cubic-bezier(0.2, 0.75, 0.25, 1)',
                             });
                         }

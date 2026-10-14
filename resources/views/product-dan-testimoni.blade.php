@@ -20,7 +20,7 @@
                     </h1>
 
                     <div class="product-card-grid grid grid-cols-1 gap-5 sm:grid-cols-3 lg:gap-8" data-product-card-grid>
-                        <article class="product-card flex h-full flex-col rounded-xl border border-[#d2e0eb] bg-[#f5faff] p-5 shadow-sm transition-all duration-300 ease-in-out sm:p-6" data-product-card="inventory" data-reveal="up">
+                        <article class="product-card flex h-full flex-col rounded-xl border border-[#d2e0eb] bg-[#f5faff] p-5 shadow-sm transition-all duration-500 ease-in-out sm:p-6" data-product-card="inventory" data-reveal="up">
                             <div class="flex min-h-14 items-start justify-between gap-4">
                                 <h2 class="text-lg font-bold leading-tight text-[#4f7f9d]">IT Inventory (ERP)</h2>
                                 <svg class="h-9 w-9 shrink-0 text-[#4f7f9d]" viewBox="0 0 40 40" fill="none" aria-hidden="true">
@@ -47,12 +47,12 @@
                                     </li>
                                 </ul>
                             </div>
-                            <button type="button" class="product-card__button mt-6 inline-flex min-h-11 w-full items-center justify-center rounded-lg bg-[#dceefa] px-4 py-2 text-sm font-semibold text-[#3d7599] transition-all duration-300 ease-in-out hover:bg-[#b8ddf4] hover:text-[#174d79] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#3984bf]" aria-controls="product-details-inventory" aria-pressed="false" data-product-select="inventory">
+                            <button type="button" class="product-card__button mt-6 inline-flex min-h-11 w-full items-center justify-center rounded-lg bg-[#dceefa] px-4 py-2 text-sm font-semibold text-[#3d7599] transition-all duration-500 ease-in-out hover:bg-[#b8ddf4] hover:text-[#174d79] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#3984bf]" aria-controls="product-details-inventory" aria-pressed="false" data-product-select="inventory">
                                 Selengkapnya
                             </button>
                         </article>
 
-                        <article class="product-card flex h-full flex-col rounded-xl border border-[#d2e0eb] bg-[#f5faff] p-5 shadow-sm transition-all duration-300 ease-in-out sm:p-6" data-product-card="cn-app" data-reveal="up">
+                        <article class="product-card flex h-full flex-col rounded-xl border border-[#d2e0eb] bg-[#f5faff] p-5 shadow-sm transition-all duration-500 ease-in-out sm:p-6" data-product-card="cn-app" data-reveal="up">
                             <div class="flex min-h-14 items-start justify-between gap-4">
                                 <h2 class="text-lg font-bold leading-tight text-[#4f7f9d]">CN APP</h2>
                                 <svg class="h-9 w-9 shrink-0 text-[#4f7f9d]" viewBox="0 0 40 40" fill="none" aria-hidden="true">
@@ -79,12 +79,12 @@
                                     </li>
                                 </ul>
                             </div>
-                            <button type="button" class="product-card__button mt-6 inline-flex min-h-11 w-full items-center justify-center rounded-lg bg-[#dceefa] px-4 py-2 text-sm font-semibold text-[#3d7599] transition-all duration-300 ease-in-out hover:bg-[#b8ddf4] hover:text-[#174d79] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#3984bf]" aria-controls="product-details-cn-app" aria-pressed="false" data-product-select="cn-app">
+                            <button type="button" class="product-card__button mt-6 inline-flex min-h-11 w-full items-center justify-center rounded-lg bg-[#dceefa] px-4 py-2 text-sm font-semibold text-[#3d7599] transition-all duration-500 ease-in-out hover:bg-[#b8ddf4] hover:text-[#174d79] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#3984bf]" aria-controls="product-details-cn-app" aria-pressed="false" data-product-select="cn-app">
                                 Selengkapnya
                             </button>
                         </article>
 
-                        <article class="product-card flex h-full flex-col rounded-xl border border-[#d2e0eb] bg-[#f5faff] p-5 shadow-sm transition-all duration-300 ease-in-out sm:p-6" data-product-card="internal-app" data-reveal="up">
+                        <article class="product-card flex h-full flex-col rounded-xl border border-[#d2e0eb] bg-[#f5faff] p-5 shadow-sm transition-all duration-500 ease-in-out sm:p-6" data-product-card="internal-app" data-reveal="up">
                             <div class="flex min-h-14 items-start justify-between gap-4">
                                 <h2 class="text-lg font-bold leading-tight text-[#4f7f9d]">Basic Internal App</h2>
                                 <svg class="h-9 w-9 shrink-0 text-[#4f7f9d]" viewBox="0 0 40 40" fill="none" aria-hidden="true">
@@ -111,7 +111,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <button type="button" class="product-card__button mt-6 inline-flex min-h-11 w-full items-center justify-center rounded-lg bg-[#dceefa] px-4 py-2 text-sm font-semibold text-[#3d7599] transition-all duration-300 ease-in-out hover:bg-[#b8ddf4] hover:text-[#174d79] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#3984bf]" aria-controls="product-details-internal-app" aria-pressed="false" data-product-select="internal-app">
+                            <button type="button" class="product-card__button mt-6 inline-flex min-h-11 w-full items-center justify-center rounded-lg bg-[#dceefa] px-4 py-2 text-sm font-semibold text-[#3d7599] transition-all duration-500 ease-in-out hover:bg-[#b8ddf4] hover:text-[#174d79] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#3984bf]" aria-controls="product-details-internal-app" aria-pressed="false" data-product-select="internal-app">
                                 Selengkapnya
                             </button>
                         </article>
