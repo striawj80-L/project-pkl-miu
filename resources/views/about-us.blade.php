@@ -179,5 +179,6 @@
             </section>
         </main>
         <x-footer />
+        <x-floating-contact />
     </body>
 </html>

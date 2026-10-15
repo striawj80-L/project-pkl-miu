@@ -763,6 +763,48 @@ body {
     color: #fff;
 }
 
+.floating-contact {
+    position: fixed;
+    z-index: 30;
+    right: max(20px, env(safe-area-inset-right));
+    bottom: max(20px, env(safe-area-inset-bottom));
+    display: inline-flex;
+    min-height: 46px;
+    align-items: center;
+    gap: 9px;
+    padding: 0 16px;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 7px;
+    background: #0866e9;
+    box-shadow: 0 8px 22px rgba(0, 56, 130, 0.25);
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition:
+        background-color 180ms ease,
+        box-shadow 180ms ease,
+        transform 180ms ease;
+}
+
+.floating-contact svg {
+    width: 21px;
+    height: 21px;
+    flex: 0 0 auto;
+}
+
+.floating-contact:hover {
+    transform: translateY(-2px);
+    background: #0058d3;
+    box-shadow: 0 11px 26px rgba(0, 56, 130, 0.3);
+}
+
+.floating-contact:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 3px;
+    box-shadow: 0 0 0 6px #0866e9;
+}
+
 .site-footer {
     padding: 28px 24px 18px;
     background: #fff;
@@ -1537,6 +1579,13 @@ a.contact-detail:hover .contact-detail__icon {
         padding: 8px 12px;
         text-align: left;
         white-space: normal;
+    }
+
+    .floating-contact {
+        right: max(14px, env(safe-area-inset-right));
+        bottom: max(14px, env(safe-area-inset-bottom));
+        min-height: 44px;
+        padding: 0 14px;
     }
 
     .contact-content {
