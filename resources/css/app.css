@@ -608,7 +608,7 @@ body {
     place-items: center;
     padding: 24px;
     color: #fff;
-    background-image: linear-gradient(180deg, rgba(9, 55, 111, 0.32), rgba(9, 55, 111, 0.08)), url('/images/RenameBG.png');
+    background-image: linear-gradient(180deg, rgba(9, 55, 111, 0.32), rgba(9, 55, 111, 0.08)), url('/images/ContactBG.jpg');
     background-attachment: fixed, fixed;
     background-position: center;
     background-repeat: no-repeat;
