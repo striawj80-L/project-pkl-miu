@@ -2012,10 +2012,10 @@ a.contact-detail:hover .contact-detail__icon {
     background: rgba(255, 255, 255, 0.93);
     box-shadow: 0 3px 9px rgba(32, 92, 131, 0.05);
     transition:
-        border-color 180ms ease,
-        box-shadow 180ms ease,
-        transform 180ms ease,
-        background-color 180ms ease;
+        border-color 450ms ease,
+        box-shadow 450ms ease,
+        transform 450ms ease,
+        background-color 450ms ease;
 }
 
 .home-faq__list details:hover {
@@ -2044,7 +2044,7 @@ a.contact-detail:hover .contact-detail__icon {
     line-height: 1.5;
     cursor: pointer;
     list-style: none;
-    transition: color 180ms ease;
+    transition: color 450ms ease;
 }
 
 .home-faq__list summary:hover {
