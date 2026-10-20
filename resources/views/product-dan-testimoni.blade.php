@@ -127,12 +127,12 @@
                             </div>
                             <div class="product-details__features">
                                 <article>
-                                    <h3>Asset Lifecycle Automation</h3>
-                                    <p>Otomatisasi Create–Assign–Return–Dispose dengan jejak lengkap. Setiap penambahan dan pengurangan aset tercatat rapi serta mudah ditelusuri.</p>
+                                    <h3>Centralized Data Management</h3>
+                                    <p>Seluruh data — mulai dari absensi, gudang, hingga laporan — tersimpan aman di satu dashboard terpusat. Akses cepat, data konsisten, dan keputusan bisa diambil lebih cepat dengan analitik real-time.</p>
                                 </article>
                                 <article>
-                                    <h3>Real-Time Stock &amp; Distribution</h3>
-                                    <p>Pantau pergerakan stok secara real-time, termasuk dukungan barcode/QR agar inventaris lebih cepat dan akurat.</p>
+                                    <h3>Smart Workflow Automation</h3>
+                                    <p>Hilangkan proses manual dan spreadsheet yang membingungkan. Sistem kami mengotomatisasi approval, notifikasi, serta pelaporan, sehingga tim Anda bisa fokus pada hal yang lebih strategis.</p>
                                 </article>
                             </div>
                             <a class="product-details__contact" href="{{ route('contact') }}">Konsultasikan kebutuhan Anda <span aria-hidden="true">→</span></a>
@@ -167,12 +167,12 @@
                             </div>
                             <div class="product-details__features">
                                 <article>
-                                    <h3>Centralized Data Management</h3>
-                                    <p>Seluruh data — mulai dari absensi, gudang, hingga laporan — tersimpan aman di satu dashboard terpusat. Akses cepat, data konsisten, dan keputusan bisa diambil lebih cepat dengan analitik real-time.</p>
+                                    <h3>Warehouse & Fulfillment Sync</h3>
+                                    <p>Automasi pembaruan status di WMS saat resi dibuat/diubah, serta membantu mengurangi mismatch antara fisik dan dokumen, sehingga status barang dan dokumen selalu sinkron—minim double entry.</p>
                                 </article>
                                 <article>
-                                    <h3>Smart Workflow Automation</h3>
-                                    <p>Hilangkan proses manual dan spreadsheet yang membingungkan. Sistem kami mengotomatisasi approval, notifikasi, serta pelaporan, sehingga tim Anda bisa fokus pada hal yang lebih strategis.</p>
+                                    <h3>Logistics Management & Tracking</h3>
+                                    <p>Generate e-consignment dalam hitungan detik, lengkap dengan label & QR. Pantau pergerakan barang end-to-end secara real-time.</p>
                                 </article>
                             </div>
                             <a class="product-details__contact" href="{{ route('contact') }}">Konsultasikan kebutuhan Anda <span aria-hidden="true">→</span></a>
