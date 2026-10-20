@@ -698,6 +698,7 @@ body {
     margin: 0;
     padding: 8px;
     border: 1px solid rgba(255, 255, 255, 0.24);
+    border-top: 2px solid #fff;
     border-radius: 12px;
     background: rgba(32, 91, 155, 0.96);
     box-shadow: 0 14px 28px rgba(15, 50, 85, 0.2);
@@ -971,6 +972,7 @@ body {
         overflow: hidden;
         padding: 0 8px;
         border: 0;
+        border-top: 2px solid transparent;
         border-radius: 8px;
         background: rgba(7, 55, 109, 0.28);
         box-shadow: none;
@@ -981,6 +983,7 @@ body {
             opacity 160ms ease,
             transform 220ms ease,
             padding 220ms ease,
+            border-color 220ms ease,
             visibility 220ms ease;
         visibility: hidden;
     }
@@ -988,6 +991,7 @@ body {
     .site-nav__item.is-open .site-nav__submenu {
         max-height: 20rem;
         padding: 4px 8px 8px;
+        border-top-color: rgba(255, 255, 255, 0.92);
     }
 
     .site-nav__links .site-nav__submenu a {
@@ -1556,6 +1560,7 @@ a.contact-detail:hover .contact-detail__icon {
         overflow: hidden;
         padding: 0 8px;
         border: 0;
+        border-top: 2px solid transparent;
         border-radius: 8px;
         background: rgba(7, 55, 109, 0.28);
         box-shadow: none;
@@ -1566,6 +1571,7 @@ a.contact-detail:hover .contact-detail__icon {
             opacity 160ms ease,
             transform 220ms ease,
             padding 220ms ease,
+            border-color 220ms ease,
             visibility 220ms ease;
         visibility: hidden;
     }
@@ -1573,6 +1579,7 @@ a.contact-detail:hover .contact-detail__icon {
     .site-nav__item.is-open .site-nav__submenu {
         max-height: 20rem;
         padding: 4px 8px 8px;
+        border-top-color: rgba(255, 255, 255, 0.92);
     }
 
     .site-nav__links .site-nav__submenu a {
@@ -2050,14 +2057,6 @@ a.contact-detail:hover .contact-detail__icon {
     line-height: 1.5;
     cursor: pointer;
     list-style: none;
-<<<<<<< HEAD
-=======
-    transition: color 450ms ease;
-}
-
-.home-faq__list summary:hover {
-    color: #0871c4;
->>>>>>> 724f4e7d891c7b3926719a854d1d61b7774a2721
 }
 
 .home-faq__list summary::-webkit-details-marker {
