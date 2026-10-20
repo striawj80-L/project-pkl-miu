@@ -125,7 +125,7 @@
                                     Satu dashboard untuk mengelola data perusahaan pengguna fasilitas. IT Inventory App dari MIU memetakan seluruh siklus aset: dari pengadaan, penempatan, peminjaman, hingga disposisi. Mendukung multi-location, barcode/QR, dan integrasi ke ERP/HR. Real-time, akurat, siap audit.
                                 </p>
                             </div>
-                            <div class="product-details__inventory-layout">
+                            <div class="product-details__showcase-layout">
                                 <div class="product-details__features">
                                     <article>
                                         <h3>Centralized Data Management</h3>
@@ -175,15 +175,25 @@
                                     Aplikasi internal yang dirancang mengikuti kebutuhan perusahaan untuk membantu koordinasi antar divisi, mempercepat persetujuan, dan meningkatkan transparansi kerja.
                                 </p>
                             </div>
-                            <div class="product-details__features">
-                                <article>
-                                    <h3>Warehouse & Fulfillment Sync</h3>
-                                    <p>Automasi pembaruan status di WMS saat resi dibuat/diubah, serta membantu mengurangi mismatch antara fisik dan dokumen, sehingga status barang dan dokumen selalu sinkron—minim double entry.</p>
-                                </article>
-                                <article>
-                                    <h3>Logistics Management & Tracking</h3>
-                                    <p>Generate e-consignment dalam hitungan detik, lengkap dengan label & QR. Pantau pergerakan barang end-to-end secara real-time.</p>
-                                </article>
+                            <div class="product-details__showcase-layout">
+                                <div class="product-details__features">
+                                    <article>
+                                        <h3>Warehouse & Fulfillment Sync</h3>
+                                        <p>Automasi pembaruan status di WMS saat resi dibuat/diubah, serta membantu mengurangi mismatch antara fisik dan dokumen, sehingga status barang dan dokumen selalu sinkron—minim double entry.</p>
+                                    </article>
+                                    <article>
+                                        <h3>Logistics Management & Tracking</h3>
+                                        <p>Generate e-consignment dalam hitungan detik, lengkap dengan label & QR. Pantau pergerakan barang end-to-end secara real-time.</p>
+                                    </article>
+                                </div>
+                                <img
+                                    class="product-details__image"
+                                    src="{{ asset('images/basic-internal-app.webp') }}"
+                                    alt="Tampilan aplikasi Basic Internal App MIU"
+                                    width="1280"
+                                    height="652"
+                                    loading="lazy"
+                                >
                             </div>
                             <a class="product-details__contact" href="{{ route('contact') }}">Konsultasikan kebutuhan Anda <span aria-hidden="true">→</span></a>
                         </section>
