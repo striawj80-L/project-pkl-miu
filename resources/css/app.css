@@ -667,7 +667,10 @@ body {
     gap: 18px;
     box-sizing: border-box;
     padding: 4px clamp(18px, 3.5vw, 48px);
-    background: linear-gradient(105deg, #287fb8 0%, #1f4db7 100%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    background: linear-gradient(105deg, rgba(17, 67, 112, 0.96) 0%, rgba(23, 48, 119, 0.96) 100%);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     isolation: isolate;
 }
 
@@ -973,7 +976,7 @@ body {
         gap: 4px;
         box-sizing: border-box;
         padding: 10px 16px 14px;
-        background: #2365a7;
+        background: rgba(28, 72, 137, 0.96);
         box-shadow: 0 14px 24px rgba(15, 50, 85, 0.14);
         transform: none;
     }
@@ -1574,7 +1577,7 @@ a.contact-detail:hover .contact-detail__icon {
         gap: 4px;
         box-sizing: border-box;
         padding: 10px 16px 14px;
-        background: #2365a7;
+        background: rgba(28, 72, 137, 0.96);
         box-shadow: 0 14px 24px rgba(15, 50, 85, 0.14);
         transform: none;
     }
