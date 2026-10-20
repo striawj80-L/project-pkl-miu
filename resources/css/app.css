@@ -2018,10 +2018,10 @@ a.contact-detail:hover .contact-detail__icon {
     background: #438fbd;
     box-shadow: none;
     transition:
-        border-color 180ms ease,
-        box-shadow 180ms ease,
-        transform 180ms ease,
-        background-color 180ms ease;
+        border-color 450ms ease,
+        box-shadow 450ms ease,
+        transform 450ms ease,
+        background-color 450ms ease;
 }
 
 .home-faq__list details:hover {
@@ -2050,6 +2050,14 @@ a.contact-detail:hover .contact-detail__icon {
     line-height: 1.5;
     cursor: pointer;
     list-style: none;
+<<<<<<< HEAD
+=======
+    transition: color 450ms ease;
+}
+
+.home-faq__list summary:hover {
+    color: #0871c4;
+>>>>>>> 724f4e7d891c7b3926719a854d1d61b7774a2721
 }
 
 .home-faq__list summary::-webkit-details-marker {

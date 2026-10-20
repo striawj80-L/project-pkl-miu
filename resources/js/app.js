@@ -311,35 +311,40 @@ document.addEventListener('DOMContentLoaded', () => {
                 faqItem.open = true;
             }
 
-            const targetHeight = shouldOpen ? answer.scrollHeight : 0;
-            const animation = answer.animate([
-                {
-                    height: `${currentHeight}px`,
-                    opacity: startOpacity,
-                    transform: shouldOpen ? 'translateY(5px)' : 'translateY(0)',
-                },
-                {
-                    height: `${targetHeight}px`,
-                    opacity: shouldOpen ? 1 : 0,
-                    transform: 'translateY(0)',
-                },
-            ], {
-                duration: 320,
-                easing: 'cubic-bezier(0.2, 0.75, 0.25, 1)',
+            requestAnimationFrame(() => {
+                const targetHeight = shouldOpen ? answer.scrollHeight : 0;
+                const animation = answer.animate([
+                    {
+                        height: `${currentHeight}px`,
+                        opacity: startOpacity,
+                        transform: shouldOpen ? 'translateY(5px)' : 'translateY(0)',
+                    },
+                    {
+                        height: `${targetHeight}px`,
+                        opacity: shouldOpen ? 1 : 0,
+                        transform: 'translateY(0)',
+                    },
+                ], {
+                    duration: shouldOpen ? 600 : 450,
+                    easing: 'cubic-bezier(0.2, 0.75, 0.25, 1)',
+                });
+
+                faqAnimations.set(answer, animation);
+                animation.onfinish = () => {
+                    if (faqItem.dataset.faqOpen !== String(shouldOpen)) {
+                        return;
+                    }
+
+                    if (!shouldOpen) {
+                        faqItem.open = false;
+                    }
+
+                    faqAnimations.delete(answer);
+                };
+                animation.oncancel = () => {
+                    faqAnimations.delete(answer);
+                };
             });
-
-            faqAnimations.set(answer, animation);
-            animation.onfinish = () => {
-                if (faqItem.dataset.faqOpen !== String(shouldOpen)) {
-                    return;
-                }
-
-                if (!shouldOpen) {
-                    faqItem.open = false;
-                }
-
-                faqAnimations.delete(answer);
-            };
         });
     });
 
