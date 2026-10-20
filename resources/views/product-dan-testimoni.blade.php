@@ -136,16 +136,14 @@
                                         <p>Hilangkan proses manual dan spreadsheet yang membingungkan. Sistem kami mengotomatisasi approval, notifikasi, serta pelaporan, sehingga tim Anda bisa fokus pada hal yang lebih strategis.</p>
                                     </article>
                                 </div>
-                                <video
-                                    class="product-details__video"
-                                    controls
-                                    preload="none"
-                                    playsinline
-                                    aria-label="Video demonstrasi IT Inventory MIU"
+                                <img
+                                    class="product-details__demo"
+                                    src="{{ asset('Video/Demo IT Inventory.gif') }}"
+                                    alt="Demo animasi IT Inventory MIU"
+                                    width="426"
+                                    height="240"
+                                    loading="lazy"
                                 >
-                                    <source src="{{ route('product.video') }}" type="video/mp4">
-                                    Browser Anda tidak mendukung pemutaran video.
-                                </video>
                             </div>
                             <a class="product-details__contact" href="{{ route('contact') }}">Konsultasikan kebutuhan Anda <span aria-hidden="true">→</span></a>
                         </section>
