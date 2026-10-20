@@ -125,15 +125,27 @@
                                     Satu dashboard untuk mengelola data perusahaan pengguna fasilitas. IT Inventory App dari MIU memetakan seluruh siklus aset: dari pengadaan, penempatan, peminjaman, hingga disposisi. Mendukung multi-location, barcode/QR, dan integrasi ke ERP/HR. Real-time, akurat, siap audit.
                                 </p>
                             </div>
-                            <div class="product-details__features">
-                                <article>
-                                    <h3>Centralized Data Management</h3>
-                                    <p>Seluruh data — mulai dari absensi, gudang, hingga laporan — tersimpan aman di satu dashboard terpusat. Akses cepat, data konsisten, dan keputusan bisa diambil lebih cepat dengan analitik real-time.</p>
-                                </article>
-                                <article>
-                                    <h3>Smart Workflow Automation</h3>
-                                    <p>Hilangkan proses manual dan spreadsheet yang membingungkan. Sistem kami mengotomatisasi approval, notifikasi, serta pelaporan, sehingga tim Anda bisa fokus pada hal yang lebih strategis.</p>
-                                </article>
+                            <div class="product-details__inventory-layout">
+                                <div class="product-details__features">
+                                    <article>
+                                        <h3>Centralized Data Management</h3>
+                                        <p>Seluruh data — mulai dari absensi, gudang, hingga laporan — tersimpan aman di satu dashboard terpusat. Akses cepat, data konsisten, dan keputusan bisa diambil lebih cepat dengan analitik real-time.</p>
+                                    </article>
+                                    <article>
+                                        <h3>Smart Workflow Automation</h3>
+                                        <p>Hilangkan proses manual dan spreadsheet yang membingungkan. Sistem kami mengotomatisasi approval, notifikasi, serta pelaporan, sehingga tim Anda bisa fokus pada hal yang lebih strategis.</p>
+                                    </article>
+                                </div>
+                                <video
+                                    class="product-details__video"
+                                    controls
+                                    preload="none"
+                                    playsinline
+                                    aria-label="Video demonstrasi IT Inventory MIU"
+                                >
+                                    <source src="{{ route('product.video') }}" type="video/mp4">
+                                    Browser Anda tidak mendukung pemutaran video.
+                                </video>
                             </div>
                             <a class="product-details__contact" href="{{ route('contact') }}">Konsultasikan kebutuhan Anda <span aria-hidden="true">→</span></a>
                         </section>

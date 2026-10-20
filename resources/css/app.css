@@ -135,6 +135,28 @@ body {
     margin-top: 32px;
 }
 
+.product-details__inventory-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.product-details__inventory-layout .product-details__features {
+    margin-top: 0;
+}
+
+.product-details__video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 16px;
+    background: #102238;
+    box-shadow: 0 8px 20px rgba(16, 62, 125, 0.14);
+    object-fit: cover;
+}
+
 .product-details__features article {
     padding: 18px 22px;
     border-radius: 20px;
@@ -1477,9 +1499,19 @@ a.contact-detail:hover .contact-detail__icon {
         gap: 16px;
     }
 
+    .product-details__inventory-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
+        margin-top: 24px;
+    }
+
     .product-details__features {
         gap: 12px;
         margin-top: 24px;
+    }
+
+    .product-details__inventory-layout .product-details__features {
+        margin-top: 0;
     }
 
     .product-details__features article {
