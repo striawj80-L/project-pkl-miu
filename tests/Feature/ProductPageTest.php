@@ -48,6 +48,10 @@ class ProductPageTest extends TestCase
             ->assertSee(asset('images/foto-mr-ck.png'), false)
             ->assertSee(asset('images/foto-snoop-dog.png'), false)
             ->assertSee(asset('images/foto-napoleon.png'), false)
+            ->assertSee('aria-label="Product"', false)
+            ->assertSee(route('product').'#product-details-inventory', false)
+            ->assertSee(route('product').'#product-details-cn-app', false)
+            ->assertSee(route('product').'#product-details-internal-app', false)
             ->assertSee(route('about'), false)
             ->assertSee(route('contact'), false);
     }

@@ -15,8 +15,14 @@
             <h2>Informasi</h2>
             <a href="{{ route('about') }}">About Us</a>
             <a href="{{ route('home') }}#faq-title">FAQs</a>
-            <a href="{{ route('product') }}">Product</a>
             <a href="{{ route('contact') }}">Contact Us</a>
+        </nav>
+
+        <nav class="site-footer__products" aria-label="Product">
+            <h2>Product</h2>
+            <a href="{{ route('product') }}#product-details-inventory">IT Inventory (ERP)</a>
+            <a href="{{ route('product') }}#product-details-cn-app">CN App</a>
+            <a href="{{ route('product') }}#product-details-internal-app">Basic Internal App</a>
         </nav>
 
         <section class="site-footer__contact" aria-labelledby="footer-contact-title">
