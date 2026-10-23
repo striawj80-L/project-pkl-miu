@@ -220,39 +220,42 @@
                         <section id="solution-panel-purchasing" class="solution-capabilities__panel" role="tabpanel" aria-labelledby="solution-tab-purchasing" tabindex="0" data-solution-panel="purchasing">
                             <div class="solution-capabilities__intro">
                                 <p>Purchasing</p>
-                                <h3>Pengadaan lebih terencana dan terkendali</h3>
-                                <span>Kelola kebutuhan pembelian dalam satu alur yang membantu tim bekerja lebih tertib, dari permintaan hingga barang diterima.</span>
+                                <h3>Kelola pembelian dari pemesanan hingga pembayaran</h3>
+                                <span>Catat pembelian material, sparepart, dan minyak; lanjutkan prosesnya melalui penerimaan barang, pembayaran, penyesuaian, hingga retur ke supplier.</span>
                             </div>
                             <ul class="solution-capabilities__features">
-                                <li><span aria-hidden="true">✓</span><div><h4>Permintaan pembelian terpusat</h4><p>Catat kebutuhan pembelian dan pantau status permintaan dalam satu sistem.</p></div></li>
-                                <li><span aria-hidden="true">✓</span><div><h4>Alur persetujuan yang jelas</h4><p>Susun proses approval sesuai tahapan dan kewenangan di perusahaan.</p></div></li>
-                                <li><span aria-hidden="true">✓</span><div><h4>Pemantauan pesanan dan penerimaan</h4><p>Hubungkan informasi pesanan dengan proses penerimaan agar progres pengadaan mudah ditelusuri.</p></div></li>
+                                <li><span aria-hidden="true">✓</span><div><h4>Pemesanan dan penerimaan barang</h4><p>Catat Purchase Order untuk material dan sparepart, Purchase Advice untuk minyak, serta penerimaan barang dari supplier.</p></div></li>
+                                <li><span aria-hidden="true">✓</span><div><h4>Faktur dan pembayaran supplier</h4><p>Kelola Purchase Invoice, pembayaran melalui kas/bank, serta pencatatan panjar atau DP kepada supplier.</p></div></li>
+                                <li><span aria-hidden="true">✓</span><div><h4>Penyesuaian harga dan retur</h4><p>Catat penyesuaian harga, refund, barang reject, rencana retur, dan pengeluaran barang untuk dikembalikan ke supplier.</p></div></li>
+                                <li><span aria-hidden="true">✓</span><div><h4>Laporan dan traceability</h4><p>Tinjau jurnal transaksi, laporan internal, mutasi barang IT Inventory, dan riwayat pergerakan barang.</p></div></li>
                             </ul>
                         </section>
 
                         <section id="solution-panel-production" class="solution-capabilities__panel" role="tabpanel" aria-labelledby="solution-tab-production" tabindex="0" data-solution-panel="production" hidden>
                             <div class="solution-capabilities__intro">
                                 <p>Production</p>
-                                <h3>Proses produksi lebih mudah dipantau</h3>
-                                <span>Dukung perencanaan dan pemantauan kegiatan produksi dengan informasi proses dan kebutuhan material yang lebih tertata.</span>
+                                <h3>Rencanakan produksi dan kendalikan pergerakan material</h3>
+                                <span>Hubungkan rencana kerja, permintaan dan pengeluaran material, hasil produksi, hingga pencatatan sisa produksi dan proses subkontrak.</span>
                             </div>
                             <ul class="solution-capabilities__features">
-                                <li><span aria-hidden="true">✓</span><div><h4>Perencanaan produksi</h4><p>Susun rencana kerja dan kebutuhan produksi berdasarkan pesanan serta kapasitas yang tersedia.</p></div></li>
-                                <li><span aria-hidden="true">✓</span><div><h4>Pemantauan proses dan hasil</h4><p>Pantau status pekerjaan produksi dan catat hasil pada setiap tahap proses.</p></div></li>
-                                <li><span aria-hidden="true">✓</span><div><h4>Kontrol kebutuhan material</h4><p>Bantu tim melihat kebutuhan bahan dan menjaga kesesuaian pencatatan stok dengan aktivitas produksi.</p></div></li>
+                                <li><span aria-hidden="true">✓</span><div><h4>Mutasi dan permintaan material</h4><p>Catat perpindahan barang antar gudang, transfer ke area produksi, serta permintaan dan pengeluaran material untuk produksi.</p></div></li>
+                                <li><span aria-hidden="true">✓</span><div><h4>Work Order dan hasil produksi</h4><p>Rencanakan pekerjaan melalui Work Order, lalu catat barang jadi yang masuk dari proses produksi.</p></div></li>
+                                <li><span aria-hidden="true">✓</span><div><h4>Produk sampingan dan sisa material</h4><p>Catat hasil sampingan produksi, termasuk alur khusus Byprod SB, serta penerimaan kembali material sisa produksi.</p></div></li>
+                                <li><span aria-hidden="true">✓</span><div><h4>Subkontrak dan laporan</h4><p>Catat pengiriman ke subkontraktor dan hasil yang diterima kembali, beserta laporan transaksi, mutasi, dan traceability.</p></div></li>
                             </ul>
                         </section>
 
                         <section id="solution-panel-sales" class="solution-capabilities__panel" role="tabpanel" aria-labelledby="solution-tab-sales" tabindex="0" data-solution-panel="sales" hidden>
                             <div class="solution-capabilities__intro">
                                 <p>Sales</p>
-                                <h3>Kelola pesanan hingga pemenuhan secara terhubung</h3>
-                                <span>Satukan informasi pelanggan, pesanan, ketersediaan barang, dan status pemenuhan untuk membantu tim sales bekerja lebih efisien.</span>
+                                <h3>Kelola dokumen penjualan hingga pembayaran customer</h3>
+                                <span>Catat rencana pengeluaran barang, dokumen penjualan lokal maupun ekspor, pengiriman ke customer, dan penerimaan pembayaran dalam rangkaian transaksi yang saling terkait.</span>
                             </div>
                             <ul class="solution-capabilities__features">
-                                <li><span aria-hidden="true">✓</span><div><h4>Data pelanggan dan pesanan</h4><p>Kelola informasi pelanggan serta riwayat pesanan dalam satu alur yang mudah ditelusuri.</p></div></li>
-                                <li><span aria-hidden="true">✓</span><div><h4>Informasi stok yang selaras</h4><p>Bantu tim memeriksa ketersediaan produk sebelum pesanan diproses lebih lanjut.</p></div></li>
-                                <li><span aria-hidden="true">✓</span><div><h4>Pemantauan status pemenuhan</h4><p>Ikuti perkembangan pesanan dari proses penjualan hingga pengiriman.</p></div></li>
+                                <li><span aria-hidden="true">✓</span><div><h4>Work Order sebagai acuan penjualan</h4><p>Untuk TSI yang tidak menggunakan Sales Order, Work Order menjadi acuan rencana produksi dan proses penjualan.</p></div></li>
+                                <li><span aria-hidden="true">✓</span><div><h4>Packing list lokal dan ekspor</h4><p>Catat rencana pengeluaran barang yang akan dikirim kepada customer lokal maupun ekspor.</p></div></li>
+                                <li><span aria-hidden="true">✓</span><div><h4>Faktur dan pengiriman ke customer</h4><p>Catat Sales Invoice lokal/ekspor serta pengeluaran barang untuk memenuhi pengiriman penjualan.</p></div></li>
+                                <li><span aria-hidden="true">✓</span><div><h4>Penerimaan pembayaran dan laporan</h4><p>Catat Sales Receipt dan tinjau jurnal transaksi, laporan internal, mutasi barang IT Inventory, serta traceability.</p></div></li>
                             </ul>
                         </section>
 
