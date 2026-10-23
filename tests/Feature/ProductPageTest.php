@@ -52,6 +52,18 @@ class ProductPageTest extends TestCase
             ->assertSee(route('product').'#product-details-inventory', false)
             ->assertSee(route('product').'#product-details-cn-app', false)
             ->assertSee(route('product').'#product-details-internal-app', false)
+            ->assertSee('Fitur untuk Setiap Proses Bisnis')
+            ->assertSee('role="tablist"', false)
+            ->assertSee('data-solution-tab="purchasing"', false)
+            ->assertSee('data-solution-tab="production"', false)
+            ->assertSee('data-solution-tab="sales"', false)
+            ->assertSee('data-solution-tab="ceisa"', false)
+            ->assertSee('Permintaan pembelian terpusat')
+            ->assertSee('Perencanaan produksi')
+            ->assertSee('Data pelanggan dan pesanan')
+            ->assertSee('Pembuatan dokumen BC 2.0 / BC 3.0')
+            ->assertSee('Sinkronisasi BC 1.1')
+            ->assertSee('id="ecosystem"', false)
             ->assertSee(route('about'), false)
             ->assertSee(route('contact'), false);
     }

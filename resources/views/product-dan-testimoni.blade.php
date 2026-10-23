@@ -201,6 +201,80 @@
                 </div>
             </section>
 
+            <section class="solution-capabilities" aria-labelledby="solution-capabilities-title" data-solution-features>
+                <div class="solution-capabilities__inner">
+                    <header class="solution-capabilities__heading" data-reveal="up">
+                        <p class="solution-capabilities__eyebrow">Solusi MIU</p>
+                        <h2 id="solution-capabilities-title">Fitur untuk Setiap Proses Bisnis</h2>
+                        <p>Pilih area solusi untuk melihat bagaimana MIU membantu proses operasional bisnis Anda.</p>
+                    </header>
+
+                    <div class="solution-capabilities__tabs" role="tablist" aria-label="Kategori fitur solusi">
+                        <button id="solution-tab-purchasing" type="button" role="tab" aria-controls="solution-panel-purchasing" aria-selected="true" tabindex="0" data-solution-tab="purchasing">Purchasing</button>
+                        <button id="solution-tab-production" type="button" role="tab" aria-controls="solution-panel-production" aria-selected="false" tabindex="-1" data-solution-tab="production">Production</button>
+                        <button id="solution-tab-sales" type="button" role="tab" aria-controls="solution-panel-sales" aria-selected="false" tabindex="-1" data-solution-tab="sales">Sales</button>
+                        <button id="solution-tab-ceisa" type="button" role="tab" aria-controls="solution-panel-ceisa" aria-selected="false" tabindex="-1" data-solution-tab="ceisa">Host to Host (CEISA 4.0)</button>
+                    </div>
+
+                    <div class="solution-capabilities__panels">
+                        <section id="solution-panel-purchasing" class="solution-capabilities__panel" role="tabpanel" aria-labelledby="solution-tab-purchasing" tabindex="0" data-solution-panel="purchasing">
+                            <div class="solution-capabilities__intro">
+                                <p>Purchasing</p>
+                                <h3>Pengadaan lebih terencana dan terkendali</h3>
+                                <span>Kelola kebutuhan pembelian dalam satu alur yang membantu tim bekerja lebih tertib, dari permintaan hingga barang diterima.</span>
+                            </div>
+                            <ul class="solution-capabilities__features">
+                                <li><span aria-hidden="true">✓</span><div><h4>Permintaan pembelian terpusat</h4><p>Catat kebutuhan pembelian dan pantau status permintaan dalam satu sistem.</p></div></li>
+                                <li><span aria-hidden="true">✓</span><div><h4>Alur persetujuan yang jelas</h4><p>Susun proses approval sesuai tahapan dan kewenangan di perusahaan.</p></div></li>
+                                <li><span aria-hidden="true">✓</span><div><h4>Pemantauan pesanan dan penerimaan</h4><p>Hubungkan informasi pesanan dengan proses penerimaan agar progres pengadaan mudah ditelusuri.</p></div></li>
+                            </ul>
+                        </section>
+
+                        <section id="solution-panel-production" class="solution-capabilities__panel" role="tabpanel" aria-labelledby="solution-tab-production" tabindex="0" data-solution-panel="production" hidden>
+                            <div class="solution-capabilities__intro">
+                                <p>Production</p>
+                                <h3>Proses produksi lebih mudah dipantau</h3>
+                                <span>Dukung perencanaan dan pemantauan kegiatan produksi dengan informasi proses dan kebutuhan material yang lebih tertata.</span>
+                            </div>
+                            <ul class="solution-capabilities__features">
+                                <li><span aria-hidden="true">✓</span><div><h4>Perencanaan produksi</h4><p>Susun rencana kerja dan kebutuhan produksi berdasarkan pesanan serta kapasitas yang tersedia.</p></div></li>
+                                <li><span aria-hidden="true">✓</span><div><h4>Pemantauan proses dan hasil</h4><p>Pantau status pekerjaan produksi dan catat hasil pada setiap tahap proses.</p></div></li>
+                                <li><span aria-hidden="true">✓</span><div><h4>Kontrol kebutuhan material</h4><p>Bantu tim melihat kebutuhan bahan dan menjaga kesesuaian pencatatan stok dengan aktivitas produksi.</p></div></li>
+                            </ul>
+                        </section>
+
+                        <section id="solution-panel-sales" class="solution-capabilities__panel" role="tabpanel" aria-labelledby="solution-tab-sales" tabindex="0" data-solution-panel="sales" hidden>
+                            <div class="solution-capabilities__intro">
+                                <p>Sales</p>
+                                <h3>Kelola pesanan hingga pemenuhan secara terhubung</h3>
+                                <span>Satukan informasi pelanggan, pesanan, ketersediaan barang, dan status pemenuhan untuk membantu tim sales bekerja lebih efisien.</span>
+                            </div>
+                            <ul class="solution-capabilities__features">
+                                <li><span aria-hidden="true">✓</span><div><h4>Data pelanggan dan pesanan</h4><p>Kelola informasi pelanggan serta riwayat pesanan dalam satu alur yang mudah ditelusuri.</p></div></li>
+                                <li><span aria-hidden="true">✓</span><div><h4>Informasi stok yang selaras</h4><p>Bantu tim memeriksa ketersediaan produk sebelum pesanan diproses lebih lanjut.</p></div></li>
+                                <li><span aria-hidden="true">✓</span><div><h4>Pemantauan status pemenuhan</h4><p>Ikuti perkembangan pesanan dari proses penjualan hingga pengiriman.</p></div></li>
+                            </ul>
+                        </section>
+
+                        <section id="solution-panel-ceisa" class="solution-capabilities__panel" role="tabpanel" aria-labelledby="solution-tab-ceisa" tabindex="0" data-solution-panel="ceisa" hidden>
+                            <div class="solution-capabilities__intro">
+                                <p>Host to Host</p>
+                                <h3>Integrasi proses kepabeanan dengan CEISA 4.0</h3>
+                                <span>Bantu pengguna mengelola dokumen dan data kepabeanan dari sistem MIU, mengurangi input berulang, serta memantau respons dokumen tanpa perlu berpindah-pindah proses.</span>
+                            </div>
+                            <ul class="solution-capabilities__features">
+                                <li><span aria-hidden="true">✓</span><div><h4>Pembuatan dokumen BC 2.0 / BC 3.0</h4><p>Buat dokumen dengan mengunggah data entry melalui format Excel yang telah disiapkan.</p></div></li>
+                                <li><span aria-hidden="true">✓</span><div><h4>Master data dan salin data</h4><p>Gunakan data referensi, salin data AJU beserta detailnya, atau gunakan kembali data barang untuk mengurangi input ulang.</p></div></li>
+                                <li><span aria-hidden="true">✓</span><div><h4>Sinkronisasi kurs dan perhitungan tarif</h4><p>Sinkronkan kurs mata uang dan hitung tarif sesuai HS code detail barang saat menyusun draft dokumen.</p></div></li>
+                                <li><span aria-hidden="true">✓</span><div><h4>Unduh respons dan dokumen PDF</h4><p>Tarik status respons, unduh PDF respons atau ekspor dokumen BUP/BUE, dan cetak dokumen tanpa membuka portal CEISA 4.0.</p></div></li>
+                                <li><span aria-hidden="true">✓</span><div><h4>Perbaikan dan pembaruan dokumen</h4><p>Lakukan nota pembetulan (NOTUL) BC 3.0 atau ubah nomor AJU sesuai kebutuhan.</p></div></li>
+                                <li><span aria-hidden="true">✓</span><div><h4>Sinkronisasi BC 1.1</h4><p>Sinkronkan data manifest BC 1.1 untuk melengkapi informasi pada saat pembuatan draft dokumen.</p></div></li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
             <section id="ecosystem" class="bg-[#f4f4f5] px-5 py-12 sm:px-8 sm:py-16" aria-labelledby="ecosystem-title">
                 <div class="mx-auto max-w-6xl">
                     <div class="grid gap-5 md:grid-cols-[1fr_0.72fr] md:items-end md:justify-between">

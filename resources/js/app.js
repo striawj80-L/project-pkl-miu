@@ -272,6 +272,62 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    const solutionFeatures = document.querySelector('[data-solution-features]');
+
+    if (solutionFeatures) {
+        const solutionTabs = Array.from(solutionFeatures.querySelectorAll('[data-solution-tab]'));
+        const solutionPanels = Array.from(solutionFeatures.querySelectorAll('[data-solution-panel]'));
+
+        const selectSolutionTab = (selectedTab, moveFocus = false) => {
+            const selectedSolution = selectedTab.dataset.solutionTab;
+            const selectedPanel = solutionPanels.find((panel) => panel.dataset.solutionPanel === selectedSolution);
+
+            if (!selectedPanel) {
+                return;
+            }
+
+            solutionTabs.forEach((tab) => {
+                const isSelected = tab === selectedTab;
+
+                tab.setAttribute('aria-selected', String(isSelected));
+                tab.tabIndex = isSelected ? 0 : -1;
+            });
+
+            solutionPanels.forEach((panel) => {
+                panel.hidden = panel !== selectedPanel;
+            });
+
+            if (moveFocus) {
+                selectedTab.focus();
+            }
+        };
+
+        solutionTabs.forEach((tab, tabIndex) => {
+            tab.addEventListener('click', () => {
+                selectSolutionTab(tab);
+            });
+
+            tab.addEventListener('keydown', (event) => {
+                let nextTabIndex;
+
+                if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
+                    nextTabIndex = (tabIndex + 1) % solutionTabs.length;
+                } else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') {
+                    nextTabIndex = (tabIndex - 1 + solutionTabs.length) % solutionTabs.length;
+                } else if (event.key === 'Home') {
+                    nextTabIndex = 0;
+                } else if (event.key === 'End') {
+                    nextTabIndex = solutionTabs.length - 1;
+                } else {
+                    return;
+                }
+
+                event.preventDefault();
+                selectSolutionTab(solutionTabs[nextTabIndex], true);
+            });
+        });
+    }
+
     const faqItems = document.querySelectorAll('.home-faq__list details');
 
     faqItems.forEach((faqItem) => {

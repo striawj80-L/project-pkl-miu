@@ -210,6 +210,167 @@ body {
     color: #0871c4;
 }
 
+.solution-capabilities {
+    padding: 56px 20px 64px;
+    background: linear-gradient(180deg, #f5f9ff 0%, #fff 100%);
+}
+
+.solution-capabilities__inner {
+    width: min(100%, 1120px);
+    margin: 0 auto;
+}
+
+.solution-capabilities__heading {
+    max-width: 680px;
+    margin: 0 auto 28px;
+    text-align: center;
+}
+
+.solution-capabilities__eyebrow,
+.solution-capabilities__intro > p {
+    margin: 0 0 8px;
+    color: #0871c4;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.solution-capabilities__heading h2 {
+    margin: 0;
+    color: #103e7d;
+    font-size: clamp(1.55rem, 3vw, 2.1rem);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.solution-capabilities__heading > p:last-child {
+    margin: 10px 0 0;
+    color: #526b83;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.solution-capabilities__tabs {
+    display: flex;
+    width: fit-content;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    margin: 0 auto 26px;
+    padding: 6px;
+    border: 1px solid #d8e3ee;
+    border-radius: 999px;
+    background: #eef3f8;
+}
+
+.solution-capabilities__tabs button {
+    min-height: 42px;
+    padding: 9px 18px;
+    border: 0;
+    border-radius: 999px;
+    background: transparent;
+    color: #24415d;
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background-color 180ms ease, color 180ms ease, box-shadow 180ms ease;
+}
+
+.solution-capabilities__tabs button[aria-selected="true"] {
+    background: #103e7d;
+    box-shadow: 0 4px 12px rgba(16, 62, 125, 0.18);
+    color: #fff;
+}
+
+.solution-capabilities__tabs button:focus-visible,
+.solution-capabilities__panel:focus-visible {
+    outline: 3px solid rgba(57, 132, 191, 0.55);
+    outline-offset: 3px;
+}
+
+.solution-capabilities__panel {
+    display: grid;
+    grid-template-columns: minmax(210px, 0.72fr) minmax(0, 1.5fr);
+    align-items: start;
+    gap: 30px;
+    padding: clamp(20px, 4vw, 38px);
+    border: 1px solid #dce7f1;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 16px 36px rgba(16, 62, 125, 0.08);
+}
+
+.solution-capabilities__panel[hidden] {
+    display: none;
+}
+
+.solution-capabilities__intro h3 {
+    margin: 0;
+    color: #173f70;
+    font-size: clamp(1.3rem, 2.3vw, 1.75rem);
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.solution-capabilities__intro > span {
+    display: block;
+    margin-top: 12px;
+    color: #526b83;
+    font-size: 0.92rem;
+    line-height: 1.65;
+}
+
+.solution-capabilities__features {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.solution-capabilities__features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    min-width: 0;
+    padding: 16px;
+    border: 1px solid #e3ebf3;
+    border-radius: 14px;
+    background: #f8fbff;
+}
+
+.solution-capabilities__features li > span {
+    display: inline-grid;
+    width: 26px;
+    height: 26px;
+    flex: 0 0 auto;
+    place-items: center;
+    border-radius: 50%;
+    background: #e1efff;
+    color: #176fc1;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.solution-capabilities__features h4 {
+    margin: 1px 0 5px;
+    color: #173f70;
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.solution-capabilities__features li p {
+    margin: 0;
+    color: #526b83;
+    font-size: 0.82rem;
+    line-height: 1.55;
+}
+
 .about-hero {
     position: relative;
     display: flex;
@@ -1551,6 +1712,37 @@ a.contact-detail:hover .contact-detail__icon {
 
     .product-details__features h3 {
         font-size: 1.08rem;
+    }
+
+    .solution-capabilities {
+        padding: 44px 18px 50px;
+    }
+
+    .solution-capabilities__heading {
+        margin-bottom: 22px;
+    }
+
+    .solution-capabilities__tabs {
+        width: 100%;
+        border-radius: 18px;
+    }
+
+    .solution-capabilities__tabs button {
+        min-height: 40px;
+        flex: 1 1 calc(50% - 6px);
+        padding: 8px 10px;
+        font-size: 0.82rem;
+    }
+
+    .solution-capabilities__panel {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 22px;
+        padding: 20px;
+        border-radius: 16px;
+    }
+
+    .solution-capabilities__features {
+        grid-template-columns: minmax(0, 1fr);
     }
 
     .contact-hero {
