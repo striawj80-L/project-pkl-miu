@@ -252,7 +252,7 @@
                                 <span>Catat rencana pengeluaran barang, dokumen penjualan lokal maupun ekspor, pengiriman ke customer, dan penerimaan pembayaran dalam rangkaian transaksi yang saling terkait.</span>
                             </div>
                             <ul class="solution-capabilities__features">
-                                <li><span aria-hidden="true">✓</span><div><h4>Work Order sebagai acuan penjualan</h4><p>Untuk TSI yang tidak menggunakan Sales Order, Work Order menjadi acuan rencana produksi dan proses penjualan.</p></div></li>
+                                <li><span aria-hidden="true">✓</span><div><h4>Work Order sebagai acuan penjualan</h4><p>Work Order menjadi acuan rencana produksi dan proses penjualan.</p></div></li>
                                 <li><span aria-hidden="true">✓</span><div><h4>Packing list lokal dan ekspor</h4><p>Catat rencana pengeluaran barang yang akan dikirim kepada customer lokal maupun ekspor.</p></div></li>
                                 <li><span aria-hidden="true">✓</span><div><h4>Faktur dan pengiriman ke customer</h4><p>Catat Sales Invoice lokal/ekspor serta pengeluaran barang untuk memenuhi pengiriman penjualan.</p></div></li>
                                 <li><span aria-hidden="true">✓</span><div><h4>Penerimaan pembayaran dan laporan</h4><p>Catat Sales Receipt dan tinjau jurnal transaksi, laporan internal, mutasi barang IT Inventory, serta traceability.</p></div></li>
